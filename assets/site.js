@@ -1,10 +1,11 @@
 (() => {
   'use strict';
-  const CACHE_KEY = 'dv-project-catalogue-v2';
+  const CACHE_KEY = 'dv-project-catalogue-v3';
+  const LEGACY_CACHE_KEY = 'dv-project-catalogue-v2';
   const bundled = Array.isArray(window.DV_PROJECTS) ? [...window.DV_PROJECTS] : [];
   let cached = [];
   try {
-    const value = JSON.parse(localStorage.getItem(CACHE_KEY) || 'null');
+    const value = JSON.parse(localStorage.getItem(CACHE_KEY) || localStorage.getItem(LEGACY_CACHE_KEY) || 'null');
     if (Array.isArray(value?.projects) && value.projects.length) cached = value.projects.filter(x => x && typeof x.slug === 'string');
   } catch (_) { /* Private browsing or corrupt cache: use bundled entries */ }
   function combine(primary, fallback) {
@@ -14,7 +15,15 @@
       found.add(p.slug); return true;
     });
   }
-  let projects = combine(cached, bundled);
+  // Local curated artwork is served by this site, not a potentially absent remote asset.
+  function repairedProject(p) {
+    if (!p || typeof p !== 'object') return p;
+    if (p.slug === 'lumin' || /github\.com\/DVExperiments\/LUMIN(?:\/|$)/i.test(p.repoUrl || '')) {
+      return {...p, image:'assets/lumin-cover.svg', slug:'lumin'};
+    }
+    return p;
+  }
+  let projects = combine(cached, bundled).map(repairedProject);
   function saveCatalogue(items) {
     try { localStorage.setItem(CACHE_KEY, JSON.stringify({savedAt:Date.now(),projects:items})); } catch (_) {}
   }
@@ -293,11 +302,22 @@
   initialiseTheme();
   $$('.current-year').forEach(x => { x.textContent = String(new Date().getFullYear()); });
   const update = page === 'home' ? initialiseHome() : page === 'project' ? initialiseProject() : null;
+  // A complete prebuilt catalogue from GitHub Actions is independent of each visitor's
+  // GitHub API rate limit. Load it before attempting optional live discovery.
+  const snapshotReady = fetch('data/projects-catalogue.json', {cache:'no-cache'})
+    .then(async response => {
+      if (!response.ok) return;
+      const snapshot = await response.json();
+      if (!Array.isArray(snapshot.projects) || snapshot.projects.length === 0) return;
+      projects = combine(snapshot.projects, projects).map(repairedProject);
+      saveCatalogue(projects);
+      if (update) update(page === 'home' ? 'success' : false);
+    }).catch(error => console.warn('Static project snapshot unavailable:', error.message));
   if (update && window.DV_SYNC) {
-    window.DV_SYNC.discover(projects).then(latest => {
+    snapshotReady.then(() => window.DV_SYNC.discover(projects)).then(latest => {
       // Merge with the last known working list; a partial API reply must not
       // cause otherwise healthy project cards or detail URLs to disappear.
-      projects = combine(latest, projects);
+      projects = combine(latest, projects).map(repairedProject);
       saveCatalogue(projects);
       update(page === 'home' ? 'success' : false);
     }).catch(error => {

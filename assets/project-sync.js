@@ -100,7 +100,7 @@
       year: chooseText(data.year, (repo.created_at || '').slice(0, 4) || new Date().getFullYear().toString()),
       featured: typeof data.featured === 'boolean' ? data.featured : Boolean(local?.featured),
       embed: typeof data.embed === 'boolean' ? data.embed : Boolean(local?.embed),
-      image: cover || (local?.image || DEFAULT_COVER),
+      image: (local?.slug === 'lumin' ? 'assets/lumin-cover.svg' : (cover || local?.image || DEFAULT_COVER)),
       imageAlt: chooseText(data.imageAlt, local?.imageAlt || `Project cover for ${repo.name}`),
       overview, highlights, tags,
       status: hasPages ? 'live' : 'repository',
