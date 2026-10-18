@@ -125,17 +125,20 @@
       return normaliseOne(repo, data, site, local);
     });
     const publicProjects = enriched.filter(Boolean);
-    const matchedLocals = new Set(repos.map(repo => matchLocal(repo, localProjects)).filter(Boolean));
-    // Keep manually curated unpublished concepts and local projects if not yet
-    // public; don't accidentally duplicate a newly published repo.
-    const drafts = localProjects.filter(p => {
-      if (matchedLocals.has(p)) return false;
-      // Never leak an old manual entry for a repo that is now private/deleted.
-      // Keep only draft concepts that have no current public GitHub URL.
-      const belongsToOwner = typeof p.repoUrl === 'string' && p.repoUrl.toLowerCase().startsWith(`https://github.com/${OWNER.toLowerCase()}/`);
-      return !belongsToOwner;
+    if (repoList.length === 0) throw new Error("GitHub returned an empty repository catalogue; retaining local cache");
+    const discoveredNames = new Set(repos.map(r => r.name.toLowerCase()));
+    const hiddenOrExplicitlyInvisible = new Set(repos.filter((r, i) => enriched[i] === null).map(r => r.name.toLowerCase()));
+    // Never erase a known entry merely because one API response is incomplete.
+    // Keep cached and bundled entries unless we positively saw that repository
+    // and its metadata explicitly marked it invisible, or it is hidden here.
+    const retained = localProjects.filter(p => {
+      const repositoryName = String(p.repoUrl || '').match(/^https:\/\/github\.com\/DVExperiments\/([^/?#]+)/i)?.[1];
+      if (repositoryName && (hiddenRepos.includes(repositoryName.toLowerCase()) || hiddenOrExplicitlyInvisible.has(repositoryName.toLowerCase()))) return false;
+      if (repositoryName && discoveredNames.has(repositoryName.toLowerCase())) return false;
+      return !publicProjects.some(item => item.slug === p.slug ||
+        (item.repoUrl && p.repoUrl && item.repoUrl.toLowerCase() === p.repoUrl.toLowerCase()));
     });
-    const all = [...publicProjects, ...drafts];
+    const all = [...publicProjects, ...retained];
     all.sort((a,b) => Number(Boolean(b.featured)) - Number(Boolean(a.featured)) || Number(b.status==='live') - Number(a.status==='live') || a.title.localeCompare(b.title));
     return all;
   }

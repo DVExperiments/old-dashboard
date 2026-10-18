@@ -7,6 +7,21 @@
  */
 window.DV_PROJECTS = [
   {
+    slug: 'lumin', title: 'LUMIN',
+    tagline: 'A living digital organism shaped by the weather.',
+    category: 'Experiments', status: 'live',
+    platform: 'Browser / JavaScript', year: '2026', featured: false,
+    embed: true, image: 'assets/cover-default.svg',
+    imageAlt: 'Abstract artwork representing a living weather organism',
+    description: 'An interactive living artwork responding to real weather, user interaction, and persistent environmental memory.',
+    overview: ['LUMIN is an experimental artificial organism made of light, shaped by real-world weather and its environmental history.', 'Its development followed five iterations of procedural rendering and weather-responsive anatomy.'],
+    highlights: ['Live and experimental weather modes', 'Persistent environmental history and organism identity', 'Interactive luminous anatomy and observatory'],
+    tags: ['Generative Art', 'Weather', 'Simulation', 'Creative Coding'],
+    liveUrl: 'https://dvexperiments.github.io/LUMIN/',
+    repoUrl: 'https://github.com/DVExperiments/LUMIN',
+    notice: 'The artwork runs in the browser. Weather data is provided by Open-Meteo when available.'
+  },
+  {
     slug: 'little-worlds',
     title: 'Little Worlds',
     tagline: 'A living ecosystem you can nudge out of balance.',

@@ -1,6 +1,23 @@
 (() => {
   'use strict';
-  let projects = Array.isArray(window.DV_PROJECTS) ? [...window.DV_PROJECTS] : [];
+  const CACHE_KEY = 'dv-project-catalogue-v2';
+  const bundled = Array.isArray(window.DV_PROJECTS) ? [...window.DV_PROJECTS] : [];
+  let cached = [];
+  try {
+    const value = JSON.parse(localStorage.getItem(CACHE_KEY) || 'null');
+    if (Array.isArray(value?.projects) && value.projects.length) cached = value.projects.filter(x => x && typeof x.slug === 'string');
+  } catch (_) { /* Private browsing or corrupt cache: use bundled entries */ }
+  function combine(primary, fallback) {
+    const found = new Set();
+    return [...primary, ...fallback].filter(p => {
+      if (!p || typeof p.slug !== 'string' || found.has(p.slug)) return false;
+      found.add(p.slug); return true;
+    });
+  }
+  let projects = combine(cached, bundled);
+  function saveCatalogue(items) {
+    try { localStorage.setItem(CACHE_KEY, JSON.stringify({savedAt:Date.now(),projects:items})); } catch (_) {}
+  }
   const $ = (selector, root = document) => root.querySelector(selector);
   const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
   const escapeHTML = (input) => String(input ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -278,7 +295,10 @@
   const update = page === 'home' ? initialiseHome() : page === 'project' ? initialiseProject() : null;
   if (update && window.DV_SYNC) {
     window.DV_SYNC.discover(projects).then(latest => {
-      projects = latest;
+      // Merge with the last known working list; a partial API reply must not
+      // cause otherwise healthy project cards or detail URLs to disappear.
+      projects = combine(latest, projects);
+      saveCatalogue(projects);
       update(page === 'home' ? 'success' : false);
     }).catch(error => {
       console.warn('GitHub sync unavailable; showing saved catalogue:', error.message);
