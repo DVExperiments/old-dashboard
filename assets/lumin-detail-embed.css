@@ -1,0 +1,7 @@
+.lumin-project-embed{margin:clamp(2rem,5vw,4rem) 0 3rem;padding:0 0 2rem;border-bottom:1px solid rgba(150,175,205,.18)}
+.lumin-project-embed h2{font-size:clamp(1.5rem,3vw,2.4rem);letter-spacing:-.035em;margin:0 0 .5rem}
+.lumin-project-embed p{max-width:65ch;opacity:.75;margin:0 0 1.4rem}
+.lumin-project-embed iframe{display:block;width:100%;aspect-ratio:16/9;min-height:360px;border:1px solid rgba(160,190,225,.2);border-radius:18px;background:#070d1a}
+.lumin-embed-links{display:flex;gap:1.25rem;flex-wrap:wrap;margin-top:1rem}
+.lumin-embed-links a{color:inherit;text-decoration:underline;text-underline-offset:.25em}
+@media(max-width:640px){.lumin-project-embed iframe{min-height:480px;aspect-ratio:auto}}
