@@ -15,14 +15,40 @@
       found.add(p.slug); return true;
     });
   }
-  // Local curated artwork is served by this site, not a potentially absent remote asset.
+  // Prefer known, bundled artwork over a generated catalogue's absent/old
+  // paths. This leaves explicitly configured covers for other repositories intact.
+  const curatedBySlug = new Map(bundled.filter(p => p && p.image && p.slug).map(p => [p.slug, p.image]));
+  const curatedByRepo = new Map(bundled.filter(p => p && p.image && p.repoUrl)
+    .map(p => [String(p.repoUrl).replace(/\/$/, '').toLowerCase(), p.image]));
   function repairedProject(p) {
     if (!p || typeof p !== 'object') return p;
-    if (p.slug === 'lumin' || /github\.com\/DVExperiments\/LUMIN(?:\/|$)/i.test(p.repoUrl || '')) {
-      return {...p, image:'assets/lumin-cover.svg', slug:'lumin'};
-    }
-    return p;
+    const lumin = p.slug === 'lumin' || /github\.com\/DVExperiments\/LUMIN(?:\/|$)/i.test(p.repoUrl || '');
+    const curated = curatedByRepo.get(String(p.repoUrl || '').replace(/\/$/, '').toLowerCase())
+      || curatedBySlug.get(p.slug);
+    return {...p, ...(lumin ? {slug:'lumin', image:'assets/lumin-cover.svg'} :
+      curated ? {image:curated} : !p.image ? {image:'assets/cover-default.svg'} : {})};
   }
+  // A public repo may advertise a cover that was renamed, moved, or deleted.
+  // Recover without hiding the entire card or recursively retrying a bad URL.
+  document.addEventListener('error', event => {
+    const img = event.target;
+    if (!(img instanceof HTMLImageElement) || img.dataset.dvFallbackDone === '1') return;
+    const src = img.getAttribute('src') || '';
+    const card = img.closest('.project-card');
+    const projectName = card?.querySelector('h3')?.textContent || '';
+    const local = bundled.find(p => p.title === projectName);
+    const preferred = img.dataset.dvFallbackStage === 'curated' ? '' : (local?.image || '');
+    img.dataset.dvFallbackDone = '1';
+    if (preferred && src !== preferred) {
+      img.dataset.dvFallbackStage = 'curated';
+      img.dataset.dvFallbackDone = '0';
+      img.src = preferred;
+    } else if (src !== 'assets/cover-default.svg') {
+      img.src = 'assets/cover-default.svg';
+    } else {
+      img.style.visibility = 'hidden';
+    }
+  }, true);
   let projects = combine(cached, bundled).map(repairedProject);
   function saveCatalogue(items) {
     try { localStorage.setItem(CACHE_KEY, JSON.stringify({savedAt:Date.now(),projects:items})); } catch (_) {}
