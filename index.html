@@ -10,17 +10,18 @@
   <meta property="og:type" content="website">
   <title>DV Experiments — Small ideas. Strange worlds.</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/styles.css">
-  <script src="assets/projects.js?v=1.4.2" defer></script>
-  <script src="assets/project-sync.js?v=1.4.2" defer></script>
-  <script src="assets/site.js?v=1.4.3" defer></script>
+  <link rel="stylesheet" href="assets/styles.css?v=1.6.0">
+  <script src="assets/projects.js?v=1.6.0" defer></script>
+  <script src="assets/collection.js?v=1.6.0" defer></script>
+  <script src="assets/project-sync.js?v=1.6.0" defer></script>
+  <script src="assets/site.js?v=1.6.0" defer></script>
 </head>
 <body data-page="home">
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header">
   <nav class="nav shell" aria-label="Main navigation">
     <a class="brand" href="./" aria-label="DV Experiments home"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span><span class="brand-wordmark">DV<span class="brand-slash">/</span>EXPERIMENTS</span></a>
-    <div class="nav-links"><a href="#projects">Projects</a><a href="#live">Live lab</a><a href="#about">About</a></div>
+    <div class="nav-links"><a href="#projects">Projects</a><a href="#live">Live lab</a><a href="#about">About</a><a href="manage.html">Cover manager</a></div>
     <div class="nav-actions"><button class="icon-button theme-toggle" type="button" aria-label="Switch to light theme" title="Toggle colour theme"><span class="theme-icon" aria-hidden="true">☀</span></button><a class="nav-github" href="https://github.com/DVExperiments" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div>
   </nav>
 </header>
@@ -30,7 +31,7 @@
       <div class="eyebrow"><span class="eyebrow-line"></span> INDEPENDENT CREATIVE TECH LAB <span class="hero-star">✳</span> EST. 2026</div>
       <h1 id="hero-title">Small ideas.<br><span class="gradient-text">Strange worlds.</span></h1>
       <p class="hero-lead">An ever-growing collection of digital experiments — from living ecosystems and game-like simulations to useful tools and curious little inventions.</p>
-      <p class="hero-sub">Some are ready to explore. Others are still figuring out what they want to be.</p>
+      <p class="hero-sub">Browse the worlds, tools, games and creative experiments. Some are ready to use; others are still taking shape.</p>
       <div class="hero-buttons"><a class="button button-primary" href="#projects">Explore the collection <span aria-hidden="true">↘</span></a><button type="button" class="button button-quiet random-project">Surprise me <span aria-hidden="true">✳</span></button></div>
       <div class="hero-stats" aria-label="Project statistics"><div><strong id="stat-projects">—</strong><span>EXPERIMENTS</span></div><div><strong id="stat-live">—</strong><span>PAGES ENABLED</span></div><div><strong>∞</strong><span>THINGS TO TRY</span></div></div>
     </div>
@@ -43,7 +44,21 @@
   <div class="marquee-band" aria-hidden="true"><div class="marquee-track">IDEAS INTO INTERACTIONS <span>✳</span> BUILT TO EXPERIMENT <span>✳</span> PLAY · BREAK · LEARN · REPEAT <span>✳</span> IDEAS INTO INTERACTIONS <span>✳</span> BUILT TO EXPERIMENT <span>✳</span> PLAY · BREAK · LEARN · REPEAT <span>✳</span></div></div>
   <section class="collection-section section-space shell" id="projects" aria-labelledby="projects-title">
     <div class="section-heading"><div><p class="section-kicker">01 / THE COLLECTION</p><h2 id="projects-title">Explore the experiments<span class="period">.</span></h2><p>Browse what's live, what's open source, and what's still in the workshop.</p></div><div class="heading-aside"><span class="asterisk">✳</span><span>NOT EVERYTHING NEEDS<br>TO BE FINISHED TO BE INTERESTING.</span></div></div>
-    <div class="project-toolbar"><div class="filter-chips" role="group" aria-label="Filter by category"><button class="filter-chip is-active" type="button" data-category="all" aria-pressed="true">All projects</button><button class="filter-chip" type="button" data-category="Simulations" aria-pressed="false">Simulations</button><button class="filter-chip" type="button" data-category="Tools" aria-pressed="false">Tools</button><button class="filter-chip" type="button" data-category="Games" aria-pressed="false">Games</button></div><div class="toolbar-controls"><label class="search-wrap"><span class="visually-hidden">Search projects</span><span aria-hidden="true">⌕</span><input id="project-search" type="search" autocomplete="off" placeholder="Search projects…"></label><label class="select-wrap"><span class="visually-hidden">Filter by availability</span><select id="project-availability"><option value="all">Any status</option><option value="live">Live online</option><option value="repository">Repository only</option><option value="development">In development</option></select></label></div></div>
+    <section class="featured-section" id="featured-section" aria-label="Featured experiments">
+      <div class="featured-heading"><div><span class="section-kicker">EDITOR'S SELECTION</span><h3>Featured experiments</h3></div><span>CURATED FROM THE COLLECTION ↗</span></div>
+      <div id="featured-projects" class="featured-mini-grid"></div>
+    </section>
+    <div class="browse-heading"><div><p class="section-kicker">FIND YOUR NEXT RABBIT HOLE</p><h3>All experiments</h3></div><a class="manage-link" href="manage.html">Manage project covers ↗</a></div>
+    <div class="project-toolbar">
+      <div class="filter-chips" role="group" aria-label="Filter by category"><button class="filter-chip is-active" type="button" data-category="all" aria-pressed="true">All projects</button></div>
+      <div class="toolbar-controls">
+        <label class="search-wrap"><span class="visually-hidden">Search projects</span><span aria-hidden="true">⌕</span><input id="project-search" type="search" autocomplete="off" placeholder="Search experiments…"></label>
+        <label class="select-wrap"><span class="visually-hidden">Filter by availability</span><select id="project-availability"><option value="all">Any status</option><option value="live">Live online</option><option value="repository">Repository only</option><option value="development">In development</option></select></label>
+        <label class="select-wrap"><span class="visually-hidden">Filter by platform</span><select id="project-platform"><option value="all">All platforms</option><option value="Browser">Browser</option><option value="Desktop">Desktop</option><option value="Other">Other</option></select></label>
+        <label class="select-wrap"><span class="visually-hidden">Sort projects</span><select id="project-sort"><option value="featured">Featured first</option><option value="recent">Recently updated</option><option value="oldest">Least recently updated</option><option value="az">Name A–Z</option><option value="za">Name Z–A</option></select></label>
+        <div class="view-controls" role="group" aria-label="Choose gallery layout"><button class="view-choice is-active" data-view="grid" type="button" title="Grid view" aria-pressed="true">▦</button><button class="view-choice" data-view="list" type="button" title="List view" aria-pressed="false">☷</button></div>
+      </div>
+    </div>
     <div class="results-line"><span id="result-count" role="status" aria-live="polite">Loading collection…</span><span class="sort-note" id="catalogue-sync" role="status" aria-live="polite">CHECKING PUBLIC REPOSITORIES…</span></div>
     <div class="project-grid" id="project-grid" aria-label="Projects"></div>
     <div class="empty-state" id="empty-state" hidden><span aria-hidden="true">⌁</span><h3>No matching experiments</h3><p>Try a different keyword or reset the filters.</p><button type="button" class="button button-outline" id="reset-filters">Clear filters</button></div>

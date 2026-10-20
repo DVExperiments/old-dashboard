@@ -98,6 +98,7 @@
       category: chooseText(data.category, local?.category || 'Experiments'),
       platform: chooseText(data.platform, repo.language || local?.platform || 'GitHub project'),
       year: chooseText(data.year, (repo.created_at || '').slice(0, 4) || new Date().getFullYear().toString()),
+      updatedAt: repo.pushed_at || repo.updated_at || local?.updatedAt || '',
       featured: typeof data.featured === 'boolean' ? data.featured : Boolean(local?.featured),
       embed: typeof data.embed === 'boolean' ? data.embed : Boolean(local?.embed),
       image: (local?.slug === 'lumin' ? 'assets/lumin-cover.svg' : (cover || local?.image || DEFAULT_COVER)),

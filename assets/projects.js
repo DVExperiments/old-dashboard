@@ -113,7 +113,7 @@ window.DV_PROJECTS = [
   },
   {
     slug: 'pocket-pal',
-    title: 'Pocket Pal',
+    title: 'Nimlets',
     tagline: 'A tiny digital creature with a mind of its own.',
     category: 'Games',
     status: 'development',
@@ -124,7 +124,7 @@ window.DV_PROJECTS = [
     imageAlt: 'Illustrated pixel-inspired handheld virtual pet with a small creature',
     description: 'A deliberately simple virtual-pet experiment where the relationship goes both ways: your creature may be learning about you, too.',
     overview: [
-      'Pocket Pal reimagines the original virtual-pet feeling: compact interactions, simple needs, playful personality, and a relationship that develops over time.',
+      'Nimlets reimagines the original virtual-pet feeling: compact interactions, simple needs, playful personality, and a relationship that develops over time.',
       'The experiment explores an unusual twist: a pet that sometimes initiates activities, invents signals, or teaches its owner how to interact rather than only waiting for commands.'
     ],
     highlights: ['Simple virtual-pet care rather than feature overload', 'Personality shaped through everyday interactions', 'Two-way communication and playful learning'],

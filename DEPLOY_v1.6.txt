@@ -1,0 +1,33 @@
+DV EXPERIMENTS v1.6 — GITHUB PAGES DIRECT-UPLOAD PACKAGE
+=======================================================
+
+This ZIP contains the complete website at repository root.
+
+DEPLOY
+1. Download the ZIP and EXTRACT it on your device.
+2. Open https://github.com/DVExperiments/dvexperiments.github.io
+3. On the main branch, choose Add file > Upload files.
+4. Drag the extracted FILES AND FOLDERS into the root of the repository.
+   IMPORTANT: Preserve the .github folder (may be hidden on some systems).
+   If the GitHub website doesn't preserve folders on upload, open each
+   corresponding folder in the repository and upload its contents there.
+5. Commit the changes. Confirm index.html is in the repository ROOT.
+6. Check the GitHub Pages site, then hard-refresh (Ctrl+F5).
+
+Do NOT upload this ZIP as a single file; GitHub doesn't unpack uploaded ZIPs.
+A GitHub Desktop or git-based replace/copy is fine if GitHub's UI struggles
+with folders.
+
+PROJECT COVER MANAGER
+After deployment, visit https://dvexperiments.github.io/manage.html
+It can detect fallback covers, check broken URLs, categorise projects,
+resize new images into WebP, and export a tiny update ZIP.
+Extract that smaller ZIP and upload its files to matching repository paths.
+No GitHub token is collected and nothing is automatically committed.
+
+SOURCE NOTE
+Built from the previously saved v1.4.2 full site plus v1.4.3 image fix.
+The live repository could not be fetched during packaging. If you edited
+repository files more recently, compare/keep those changes before replacing.
+
+For details read docs/COVER_MANAGER.md and CHANGELOG_v1.6.md.

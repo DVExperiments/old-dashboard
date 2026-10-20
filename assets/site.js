@@ -1,13 +1,14 @@
 (() => {
   'use strict';
-  const CACHE_KEY = 'dv-project-catalogue-v3';
-  const LEGACY_CACHE_KEY = 'dv-project-catalogue-v2';
+  const CACHE_KEY = 'dv-project-catalogue-v4';
+  const LEGACY_CACHE_KEY = 'dv-project-catalogue-v3';
   const bundled = Array.isArray(window.DV_PROJECTS) ? [...window.DV_PROJECTS] : [];
+  const collection = window.DV_COLLECTION;
   let cached = [];
   try {
     const value = JSON.parse(localStorage.getItem(CACHE_KEY) || localStorage.getItem(LEGACY_CACHE_KEY) || 'null');
     if (Array.isArray(value?.projects) && value.projects.length) cached = value.projects.filter(x => x && typeof x.slug === 'string');
-  } catch (_) { /* Private browsing or corrupt cache: use bundled entries */ }
+  } catch (_) { /* Local storage unavailable: fall back to bundled entries */ }
   function combine(primary, fallback) {
     const found = new Set();
     return [...primary, ...fallback].filter(p => {
@@ -15,39 +16,21 @@
       found.add(p.slug); return true;
     });
   }
-  // Prefer known, bundled artwork over a generated catalogue's absent/old
-  // paths. This leaves explicitly configured covers for other repositories intact.
-  const curatedBySlug = new Map(bundled.filter(p => p && p.image && p.slug).map(p => [p.slug, p.image]));
-  const curatedByRepo = new Map(bundled.filter(p => p && p.image && p.repoUrl)
-    .map(p => [String(p.repoUrl).replace(/\/$/, '').toLowerCase(), p.image]));
-  function repairedProject(p) {
-    if (!p || typeof p !== 'object') return p;
-    const lumin = p.slug === 'lumin' || /github\.com\/DVExperiments\/LUMIN(?:\/|$)/i.test(p.repoUrl || '');
-    const curated = curatedByRepo.get(String(p.repoUrl || '').replace(/\/$/, '').toLowerCase())
-      || curatedBySlug.get(p.slug);
-    return {...p, ...(lumin ? {slug:'lumin', image:'assets/lumin-cover.svg'} :
-      curated ? {image:curated} : !p.image ? {image:'assets/cover-default.svg'} : {})};
-  }
-  // A public repo may advertise a cover that was renamed, moved, or deleted.
-  // Recover without hiding the entire card or recursively retrying a bad URL.
+  const repairedProject = p => collection ? collection.prepare(p) : p;
+  // Recover gracefully from a deleted remote cover or invalid assigned path.
+  // This also covers images in Live Lab and the single-project view.
   document.addEventListener('error', event => {
     const img = event.target;
-    if (!(img instanceof HTMLImageElement) || img.dataset.dvFallbackDone === '1') return;
-    const src = img.getAttribute('src') || '';
-    const card = img.closest('.project-card');
-    const projectName = card?.querySelector('h3')?.textContent || '';
-    const local = bundled.find(p => p.title === projectName);
-    const preferred = img.dataset.dvFallbackStage === 'curated' ? '' : (local?.image || '');
-    img.dataset.dvFallbackDone = '1';
-    if (preferred && src !== preferred) {
-      img.dataset.dvFallbackStage = 'curated';
-      img.dataset.dvFallbackDone = '0';
-      img.src = preferred;
-    } else if (src !== 'assets/cover-default.svg') {
-      img.src = 'assets/cover-default.svg';
-    } else {
+    if (!(img instanceof HTMLImageElement)) return;
+    const fallback = img.dataset.fallback || 'assets/project-covers/fallback-creative.svg';
+    if (img.dataset.fallbackAttempted === '1' || img.getAttribute('src') === fallback) {
       img.style.visibility = 'hidden';
+      img.closest('.project-card')?.classList.add('is-image-broken');
+      return;
     }
+    img.dataset.fallbackAttempted = '1';
+    img.src = fallback;
+    img.closest('.project-card')?.classList.add('is-image-broken');
   }, true);
   let projects = combine(cached, bundled).map(repairedProject);
   function saveCatalogue(items) {
@@ -84,10 +67,13 @@
     return `<span class="status-pill status-${escapeHTML(p.status)}">${dot}${escapeHTML(statusText[p.status] || 'Experiment')}</span>`;
   }
   function cardMarkup(p) {
-    return `<article class="project-card">
+    const fallback = collection.FALLBACK[p.category] || collection.FALLBACK['Creative Experiments'];
+    const badge = p.platformGroup === 'Browser' ? 'WEB' : p.platformGroup === 'Desktop' ? 'DESKTOP' : p.platformGroup === 'Browser + Desktop' ? 'WEB + DESKTOP' : 'PROJECT';
+    return `<article class="project-card" data-project-slug="${escapeHTML(p.slug)}" data-image-source="${escapeHTML(p.imageSource || '')}">
       <a href="${detailUrl(p)}" class="card-visual" aria-label="Explore ${escapeHTML(p.title)}">
-        <img src="${escapeHTML(p.image)}" alt="${escapeHTML(p.imageAlt || '')}" loading="lazy">
+        <img src="${escapeHTML(p.image)}" data-fallback="${escapeHTML(fallback)}" alt="${escapeHTML(p.imageAlt || '')}" loading="lazy">
         <span class="visual-arrow" aria-hidden="true">↗</span>
+        <span class="card-platform">${badge}</span>
       </a>
       <div class="card-body"><div class="card-meta">${pill(p)}<span>${escapeHTML(p.category.toUpperCase())}</span></div>
       <a href="${detailUrl(p)}" class="card-title-link"><h3>${escapeHTML(p.title)}</h3><span aria-hidden="true">↗</span></a>
@@ -97,33 +83,64 @@
 
   function initialiseHome() {
     let category = 'all';
+    let view = 'grid';
+    try { view = localStorage.getItem('dv-gallery-view') === 'list' ? 'list' : 'grid'; } catch (_) {}
     const search = $('#project-search');
     const availability = $('#project-availability');
+    const platform = $('#project-platform');
+    const order = $('#project-sort');
     const grid = $('#project-grid');
+    const featuredGrid = $('#featured-projects');
     const emptyState = $('#empty-state');
     const count = $('#result-count');
     const filters = $('.filter-chips');
     const catalogueSync = $('#catalogue-sync');
     function renderFilters() {
-      const known = ['Simulations', 'Tools', 'Games'];
-      const categories = [...new Set([...known, ...projects.map(p => p.category)].filter(Boolean))];
+      const categories = collection.GROUPS.filter(c => projects.some(p => p.category === c));
       if (category !== 'all' && !categories.includes(category)) category = 'all';
-      filters.innerHTML = [['all','All projects'],...categories.map(c => [c,c])].map(([value,label]) =>
-        `<button class="filter-chip ${category===value?'is-active':''}" type="button" data-category="${escapeHTML(value)}" aria-pressed="${String(category===value)}">${escapeHTML(label)}</button>`
-      ).join('');
+      filters.innerHTML = [['all','All projects'],...categories.map(c => [c,c])].map(([value,label]) => {
+        const n = value === 'all' ? projects.length : projects.filter(p => p.category === value).length;
+        return `<button class="filter-chip ${category===value?'is-active':''}" type="button" data-category="${escapeHTML(value)}" aria-pressed="${String(category===value)}">${escapeHTML(label)} <span class="filter-count">${n}</span></button>`;
+      }).join('');
+    }
+    function ordered(items) {
+      const list = items.slice();
+      const byTitle = (a,b) => String(a.title).localeCompare(String(b.title));
+      switch (order.value) {
+        case 'az': return list.sort(byTitle);
+        case 'za': return list.sort((a,b) => byTitle(b,a));
+        case 'recent': return list.sort((a,b) => (Date.parse(b.updatedAt || '') || 0) - (Date.parse(a.updatedAt || '') || 0) || byTitle(a,b));
+        case 'oldest': return list.sort((a,b) => (Date.parse(a.updatedAt || '') || Infinity) - (Date.parse(b.updatedAt || '') || Infinity) || byTitle(a,b));
+        default: return list.sort((a,b) => Number(Boolean(b.featured))-Number(Boolean(a.featured)) || Number(b.status === 'live')-Number(a.status === 'live') || byTitle(a,b));
+      }
+    }
+    function renderFeatured() {
+      const available = projects.filter(p => p.featured);
+      const selected = [...available, ...projects.filter(p => p.status === 'live' && !p.featured)].filter((p,i,a) => a.findIndex(x => x.slug === p.slug) === i).slice(0,3);
+      featuredGrid.innerHTML = selected.map(p => `<a class="featured-mini" href="${detailUrl(p)}"><img loading="lazy" src="${escapeHTML(p.image)}" data-fallback="${escapeHTML(collection.FALLBACK[p.category])}" alt=""><span class="featured-mini-body"><span class="featured-mini-kicker">${escapeHTML(p.category)} ↗</span><strong>${escapeHTML(p.title)}</strong><span>${escapeHTML(p.tagline || '')}</span></span></a>`).join('');
+      $('#featured-section').hidden = selected.length === 0;
     }
     function render() {
       const q = search.value.trim().toLocaleLowerCase();
       const status = availability.value;
-      const results = projects.filter(p => {
+      const platformValue = platform.value;
+      const results = ordered(projects.filter(p => {
         const categoryMatches = category === 'all' || p.category === category;
         const statusMatches = status === 'all' || p.status === status;
+        const platformMatches = platformValue === 'all' || p.platformGroup === platformValue ||
+          (platformValue === 'Browser' && p.platformGroup === 'Browser + Desktop') ||
+          (platformValue === 'Desktop' && p.platformGroup === 'Browser + Desktop');
         const blob = [p.title, p.tagline, p.description, p.category, p.platform, ...(p.tags || [])].join(' ').toLocaleLowerCase();
-        return categoryMatches && statusMatches && (!q || blob.includes(q));
+        return categoryMatches && statusMatches && platformMatches && (!q || blob.includes(q));
+      }));
+      grid.classList.toggle('is-list-view', view === 'list');
+      $$('.view-choice').forEach(btn => {
+        btn.classList.toggle('is-active', btn.dataset.view === view);
+        btn.setAttribute('aria-pressed', String(btn.dataset.view === view));
       });
       grid.innerHTML = results.map(cardMarkup).join('');
       emptyState.hidden = results.length > 0;
-      count.textContent = `${results.length} ${results.length === 1 ? 'experiment' : 'experiments'} found`;
+      count.textContent = `${results.length} of ${projects.length} ${projects.length === 1 ? 'experiment' : 'experiments'}`;
     }
     // Site-level curatorial choice: project metadata cannot unexpectedly displace NZ EcoSim.
     const DEFAULT_FEATURED = 'nz-ecosim';
@@ -182,7 +199,10 @@
       if (changed || (loadedEmbed && loadedEmbed.url !== url)) stopEmbed();
       $('#live-title').textContent = p.tagline || p.title;
       $('#live-description').textContent = p.description;
+      $('#live-cover').dataset.fallbackAttempted = '0';
+      $('#live-cover').style.visibility = '';
       $('#live-cover').src = p.image;
+      $('#live-cover').dataset.fallback = collection.FALLBACK[p.category] || collection.FALLBACK['Creative Experiments'];
       $('#live-cover').alt = p.imageAlt || `Cover image for ${p.title}`;
       $('#live-embed-heading').textContent = `${p.title.toUpperCase()} / LIVE INTERACTIVE PREVIEW`;
       loadButton.textContent = `▶ Load ${p.title}`;
@@ -256,6 +276,7 @@
       const featured = pinnedLiveProject();
       if (featured) {
         $('#hero-featured-image').src = featured.image;
+        $('#hero-featured-image').dataset.fallback = collection.FALLBACK[featured.category] || collection.FALLBACK['Creative Experiments'];
         $('#hero-featured-image').alt = featured.imageAlt;
         $('#hero-featured-title').textContent = featured.title;
         $('#hero-featured-link').href = detailUrl(featured);
@@ -271,7 +292,7 @@
       $('#stat-live').textContent = String(projects.filter(p => p.status === 'live').length).padStart(2, '0');
       catalogueSync.textContent = syncState === 'success' ? '↻ SYNCED WITH PUBLIC GITHUB REPOS'
         : syncState === 'error' ? 'OFFLINE / SHOWING SAVED PROJECT LIST' : 'CHECKING PUBLIC REPOSITORIES…';
-      renderFilters(); render();
+      renderFeatured(); renderFilters(); render();
     }
     filters.addEventListener('click', event => {
       const chip = event.target.closest('.filter-chip');
@@ -281,8 +302,15 @@
     });
     search.addEventListener('input', render);
     availability.addEventListener('change', render);
+    platform.addEventListener('change', render);
+    order.addEventListener('change', render);
+    $$('.view-choice').forEach(btn => btn.addEventListener('click', () => {
+      view = btn.dataset.view === 'list' ? 'list' : 'grid';
+      try { localStorage.setItem('dv-gallery-view', view); } catch (_) {}
+      render();
+    }));
     $('#reset-filters').addEventListener('click', () => {
-      search.value = ''; availability.value = 'all'; category = 'all';
+      search.value = ''; availability.value = 'all'; platform.value = 'all'; order.value = 'featured'; category = 'all';
       renderFilters(); render(); search.focus();
     });
     $$('.random-project').forEach(btn => btn.addEventListener('click', () => {
@@ -316,7 +344,7 @@
     if (repoUrl) actions += `<a class="button ${launchUrl ? 'button-outline' : 'button-primary'}" href="${escapeHTML(repoUrl)}" target="_blank" rel="noopener noreferrer">View on GitHub <span aria-hidden="true">↗</span></a>`;
     if (!actions) actions = `<span class="unavailable-note">Public release link coming when the project is published.</span>`;
     main.innerHTML = `<section class="detail-heading" aria-labelledby="detail-title"><p class="section-kicker">EXPERIMENT / ${String(projects.indexOf(p) + 1).padStart(2, '0')} · ${escapeHTML(p.year)}</p><div class="detail-title-row"><div><div class="detail-status">${pill(p)}<span>${escapeHTML(p.category)} / ${escapeHTML(p.platform)}</span></div><h1 id="detail-title">${escapeHTML(p.title)}<span class="period">.</span></h1><p class="detail-tagline">${escapeHTML(p.tagline)}</p></div><span class="detail-asterisk" aria-hidden="true">✳</span></div></section>
-      <figure class="detail-cover"><img src="${escapeHTML(p.image)}" alt="${escapeHTML(p.imageAlt)}"><figcaption>PROJECT ARTWORK · ILLUSTRATIVE VISUAL</figcaption></figure>
+      <figure class="detail-cover"><img src="${escapeHTML(p.image)}" data-fallback="${escapeHTML(collection.FALLBACK[p.category])}" alt="${escapeHTML(p.imageAlt)}"><figcaption>PROJECT ARTWORK · ILLUSTRATIVE VISUAL</figcaption></figure>
       <div class="detail-content"><div class="detail-left"><div class="detail-actions">${actions}</div><p class="detail-label">THE SHORT VERSION</p><p class="detail-intro">${escapeHTML(p.description)}</p><div class="tag-list" aria-label="Project tags">${(p.tags || []).map(tag => `<span>${escapeHTML(tag)}</span>`).join('')}</div></div><div class="detail-right"><div class="detail-section"><p class="detail-label">ABOUT THE EXPERIMENT</p>${(p.overview || []).map(paragraph => `<p>${escapeHTML(paragraph)}</p>`).join('')}</div>${(p.highlights || []).length ? `<div class="detail-section"><p class="detail-label">THINGS TO EXPLORE</p><ul class="highlight-list">${p.highlights.map(text => `<li><span aria-hidden="true">↗</span>${escapeHTML(text)}</li>`).join('')}</ul></div>` : ''}${p.notice ? `<div class="project-note"><strong>A note on availability</strong><p>${escapeHTML(p.notice)}</p></div>` : ''}</div></div>`;
     const other = projects.filter(x => x.slug !== p.slug).sort((a,b) => Number(b.category === p.category) - Number(a.category === p.category)).slice(0, 2);
     related.innerHTML = other.map(cardMarkup).join('');
@@ -330,7 +358,14 @@
   const update = page === 'home' ? initialiseHome() : page === 'project' ? initialiseProject() : null;
   // A complete prebuilt catalogue from GitHub Actions is independent of each visitor's
   // GitHub API rate limit. Load it before attempting optional live discovery.
-  const snapshotReady = fetch('data/projects-catalogue.json', {cache:'no-cache'})
+  const configReady = fetch('data/project-curation.json', {cache:'no-cache'})
+    .then(async response => {
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      collection.setConfig(await response.json());
+      projects = projects.map(repairedProject);
+      if (update) update(page === 'home' ? 'loading' : true);
+    }).catch(error => console.warn('Curation file unavailable; using default artwork:', error.message));
+  const snapshotReady = configReady.then(() => fetch('data/projects-catalogue.json', {cache:'no-cache'}))
     .then(async response => {
       if (!response.ok) return;
       const snapshot = await response.json();
@@ -341,8 +376,6 @@
     }).catch(error => console.warn('Static project snapshot unavailable:', error.message));
   if (update && window.DV_SYNC) {
     snapshotReady.then(() => window.DV_SYNC.discover(projects)).then(latest => {
-      // Merge with the last known working list; a partial API reply must not
-      // cause otherwise healthy project cards or detail URLs to disappear.
       projects = combine(latest, projects).map(repairedProject);
       saveCatalogue(projects);
       update(page === 'home' ? 'success' : false);
@@ -351,4 +384,7 @@
       update(page === 'home' ? 'error' : false);
     });
   }
+  // Cover Manager shares the identical live catalogue and curation rules.
+  window.DV_GET_PROJECTS = () => projects.slice();
+  window.DV_CATALOGUE_READY = snapshotReady;
 })();

@@ -7,7 +7,7 @@ TOKEN=os.environ.get('GH_TOKEN','')
 ROOT=Path(__file__).resolve().parents[1]
 
 def get(url):
-    req=urllib.request.Request(url,headers={'Accept':'application/vnd.github+json','User-Agent':'DVExperiments-Catalogue/1.4.2',**({'Authorization':'Bearer '+TOKEN} if TOKEN else {})})
+    req=urllib.request.Request(url,headers={'Accept':'application/vnd.github+json','User-Agent':'DVExperiments-Catalogue/1.6.0',**({'Authorization':'Bearer '+TOKEN} if TOKEN else {})})
     with urllib.request.urlopen(req,timeout=20) as r: return json.load(r)
 
 def metadata(repo):
@@ -15,7 +15,7 @@ def metadata(repo):
     from urllib.parse import quote
     url=f'https://raw.githubusercontent.com/{OWNER}/{quote(name)}/{quote(branch)}/dv-project.json'
     try:
-        with urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent':'DVExperiments-Catalogue/1.4.2'}),timeout=12) as r:
+        with urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent':'DVExperiments-Catalogue/1.6.0'}),timeout=12) as r:
             d=json.load(r)
             return d if isinstance(d,dict) else {}
     except (urllib.error.HTTPError, urllib.error.URLError, ValueError, TimeoutError): return {}
@@ -38,7 +38,7 @@ def build_one(repo):
       'tagline':d.get('tagline') or description[:105], 'description':description,
       'category':d.get('category') or 'Experiments','platform':d.get('platform') or repo.get('language') or 'GitHub project',
       'year':str(d.get('year') or str(repo.get('created_at','2026'))[:4]), 'featured':bool(d.get('featured')),
-      'embed':bool(d.get('embed')),'image':image,'imageAlt':d.get('imageAlt') or f'Artwork for {name}',
+      'embed':bool(d.get('embed')),'updatedAt':repo.get('pushed_at') or repo.get('updated_at') or '', 'image':image,'imageAlt':d.get('imageAlt') or f'Artwork for {name}',
       'overview':d.get('overview') if isinstance(d.get('overview'),list) else [description],
       'highlights':d.get('highlights') if isinstance(d.get('highlights'),list) else [],
       'tags':d.get('tags') if isinstance(d.get('tags'),list) else (repo.get('topics') or []),

@@ -62,3 +62,16 @@ For exact steps, see [`docs/ADDING_A_PROJECT.md`](docs/ADDING_A_PROJECT.md).
 - Site and project links work independently: a broken published site does not prevent visiting its source repository.
 
 © 2026 DV Experiments.
+
+---
+
+## Collection organisation + Cover Manager (v1.6)
+
+The gallery now has curated featured projects, category and platform filters, status filters, sorting and grid/list views. New public repositories still appear automatically from GitHub discovery and the Actions catalogue. Categories and project images can be managed centrally.
+
+- **Open:** `/manage.html` to audit missing/broken covers, adjust category/featured settings, and export a GitHub-ready update bundle.
+- **Edit:** `data/project-curation.json` to map repository names to covers and curated display settings.
+- **Upload:** additional `.webp` covers into `assets/project-covers/`.
+- **Read:** `docs/COVER_MANAGER.md` for the workflow and instructions.
+
+This is a fully static GitHub Pages approach; the manager generates files but does not write directly to GitHub. Always extract ZIP contents before uploading to your repository.
