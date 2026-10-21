@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T21:44:02.040488+00:00",
+  "generatedAt": "2026-10-21T05:01:22.634098+00:00",
   "projects": [
     {
       "slug": "little-worlds-nz",
@@ -119,7 +119,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-20T17:21:40Z",
+      "updatedAt": "2026-10-20T21:44:42Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for Goodscroll",
       "overview": [
@@ -368,6 +368,29 @@
       "notice": "Curated educational models, not real-time engineering simulations or validated failure predictions. Activity completion is not a factual grade. Student work is stored privately in each visitor's own browser."
     },
     {
+      "slug": "tech-brief",
+      "title": "Tech Brief",
+      "tagline": "Public project in the DV Experiments collection: tech-brief.",
+      "description": "Public project in the DV Experiments collection: tech-brief.",
+      "category": "Experiments",
+      "platform": "Python",
+      "year": "2026",
+      "featured": false,
+      "embed": false,
+      "updatedAt": "2026-10-21T02:03:21Z",
+      "image": "assets/cover-default.svg",
+      "imageAlt": "Artwork for tech-brief",
+      "overview": [
+        "Public project in the DV Experiments collection: tech-brief."
+      ],
+      "highlights": [],
+      "tags": [],
+      "status": "live",
+      "liveUrl": "https://dvexperiments.github.io/tech-brief/",
+      "repoUrl": "https://github.com/DVExperiments/tech-brief",
+      "notice": "GitHub Pages is enabled."
+    },
+    {
       "slug": "tech-xray",
       "title": "Tech X-Ray",
       "tagline": "See beyond the headline.",
@@ -422,7 +445,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-20T19:55:15Z",
+      "updatedAt": "2026-10-21T01:18:04Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for WorldPulse",
       "overview": [
