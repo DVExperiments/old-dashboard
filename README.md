@@ -65,13 +65,13 @@ For exact steps, see [`docs/ADDING_A_PROJECT.md`](docs/ADDING_A_PROJECT.md).
 
 ---
 
-## Collection organisation + Cover Manager (v1.6)
+## Collection organisation + local-only Cover Manager (v1.6.1)
 
 The gallery now has curated featured projects, category and platform filters, status filters, sorting and grid/list views. New public repositories still appear automatically from GitHub discovery and the Actions catalogue. Categories and project images can be managed centrally.
 
-- **Open:** `/manage.html` to audit missing/broken covers, adjust category/featured settings, and export a GitHub-ready update bundle.
+- **Open locally:** the **separate** `DVExperiments_Local_Cover_Manager_v1.6.1.zip` download; run `START_COVER_MANAGER.bat` (Windows) to audit and export artwork changes. Do not deploy the local tool.
 - **Edit:** `data/project-curation.json` to map repository names to covers and curated display settings.
 - **Upload:** additional `.webp` covers into `assets/project-covers/`.
 - **Read:** `docs/COVER_MANAGER.md` for the workflow and instructions.
 
-This is a fully static GitHub Pages approach; the manager generates files but does not write directly to GitHub. Always extract ZIP contents before uploading to your repository.
+The public site remains static on GitHub Pages. The Cover Manager runs only on your own computer and generates uploadable files; it never writes to GitHub. The old `/manage.html` public interface has been disabled. For complete removal, delete `manage.html`, `assets/manager.js`, and `assets/manager.css` from the GitHub repository after deploying.

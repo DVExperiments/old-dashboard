@@ -1,3 +1,5 @@
+# Historical release notes — v1.6.0 (the public manager was disabled by v1.6.1)
+
 # DV Experiments v1.5 + v1.6 — Combined Collection and Cover Manager release
 
 ## What changed

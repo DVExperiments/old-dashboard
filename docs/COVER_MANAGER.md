@@ -1,55 +1,22 @@
-# Project Covers & Collection Management
+# Cover Management (v1.6.1) — local tool
 
-## Fast route: use the Cover Manager
+The cover manager is **not** part of the public GitHub Pages site anymore.
 
-1. Visit `https://dvexperiments.github.io/manage.html` once this release is deployed.
-2. Choose **Needs artwork** to see cards currently using category fallback art.
-3. Choose an image on a project. JPG, PNG and WebP files are supported up to 15 MB. The browser centre-crops it into a 1200×675 WebP and **never uploads the original image to a server**.
-4. Optionally select the category and featured status. Use **Check all images** to test for 404/broken URLs (requires a connection; network errors may be reported as failures).
-5. Click **Export GitHub update ZIP** to get only the changed `data/project-curation.json` and any newly converted cover images.
-6. Extract that ZIP locally. Copy `data/project-curation.json` to the matching folder in your dashboard repository; upload any WebP files into `assets/project-covers/`. Commit your changes.
-7. Refresh the public site (Ctrl+F5 if necessary).
+1. Download `DVExperiments_Local_Cover_Manager_v1.6.1.zip` and extract it to a folder **outside your public GitHub repository**.
+2. On Windows, double-click `START_COVER_MANAGER.bat`. On macOS/Linux, run `python3 start_manager.py` inside the extracted folder. Python 3 is the only dependency; the standard library hosts the page on `127.0.0.1` (localhost) and the browser does the image work.
+3. In your browser's local manager, choose **Sync published mapping** to pull `data/project-curation.json` from the deployed public site, or **Import mapping JSON** to select your own copy. Import the current mapping before editing so previous cover assignments are preserved.
+4. The manager can discover new public GitHub repositories, audit image URLs, change featured flags and categories, and turn selected JPG/PNG/WebP covers into 1200×675 WebP.
+5. Select **Export GitHub update ZIP**. Extract this tiny ZIP and upload its files to the **same paths** in your GitHub repository (`data/project-curation.json`, `assets/project-covers/*.webp`). Do not upload the ZIP as one archive.
+6. Commit and refresh the public site.
 
-> The GitHub upload page will **not unpack** ZIP files. Extract locally and upload the files to their corresponding paths. If GitHub's upload UI does not preserve nested folders, open the target directory in the repository first and upload its files there.
+### Old public `/manage.html` cleanup
 
-## Alternative: manually assign an existing image
+The v1.6.1 website ZIP overwrites `/manage.html` with a harmless unavailable page and the old manager JS/CSS with empty stubs. This immediately disables the old editor when the new files deploy. GitHub's upload interface does not delete files already in the repository. To get a real HTTP 404, use GitHub's file editor to **delete** `manage.html`, `assets/manager.js`, and `assets/manager.css` after uploading the new site. There is no need to delete `assets/collection.js` or `data/project-curation.json` — the public gallery needs both.
 
-Open `data/project-curation.json`. In `projects`, create a lowercase repo-name key, for example:
+### Cover resolution
 
-```json
-"my-new-project": {
-  "category": "Creative Experiments",
-  "cover": "assets/project-covers/my-new-project.webp",
-  "featured": false
-}
-```
+1. Curated mapping in `data/project-curation.json`.
+2. Art from project metadata or saved project catalogue.
+3. Category-specific SVG fallback, with browser error fallback for broken URLs.
 
-Upload the named image to `assets/project-covers/`. Use a relative path without a leading slash. Existing URLs with `https://` also work.
-
-The file can override `title`, `category`, `cover`, `featured` and `imageAlt`. It does **not** override whether a project has a published GitHub Pages site; availability is detected from actual repositories. Display status is never faked.
-
-## Category names
-
-- Simulations & Worlds
-- Tools & Utilities
-- Games & Interactive
-- Data & Visualisation
-- Creative Experiments
-
-Existing metadata categories like "Simulations", "Tools", "Games" or "Experiments" automatically map to the new names. Unrecognised categories appear under Creative Experiments, unless assigned explicitly in the curation file.
-
-## Artwork precedence
-
-1. Central cover assignment in `data/project-curation.json`.
-2. Existing cover from project metadata, snapshot or bundled catalogue.
-3. Category-specific fallback SVG. Broken URLs fall back visually in the browser.
-
-A fallback cover means the card is intentionally waiting for custom art. A cover can still have a broken URL, so the manager has a separate on-demand image check.
-
-## Auto-discovered repositories
-
-The hub still checks public `DVExperiments` repositories via GitHub and reads optional `dv-project.json` metadata. The scheduled workflow refreshes `data/projects-catalogue.json`. Your local curation file has final say over how the hub presents cover artwork and categories.
-
-## Privacy and access
-
-`manage.html` is a public page that **prepares downloadable files**, not an authenticated administration backend. Do not enter secrets there; do not put private images or metadata in this public repository. The Cover Manager needs no tokens, passwords or external libraries.
+The local manager is read-only until it exports downloaded files. Only a person with repository write access can publish changes. No token, password or GitHub sign-in is needed by the tool. Localhost access itself is not authentication; keep the manager folder private, and never store private information in a public repository.

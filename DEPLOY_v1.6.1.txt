@@ -1,0 +1,25 @@
+DV EXPERIMENTS v1.6.1 — PUBLIC WEBSITE (DIRECT UPLOAD)
+=======================================================
+
+THIS IS THE PUBLIC WEBSITE ONLY — DO NOT UPLOAD THE SEPARATE LOCAL MANAGER.
+
+1. Extract DVExperiments_v1.6.1_PUBLIC_SITE_DIRECT_UPLOAD.zip.
+2. Open https://github.com/DVExperiments/dvexperiments.github.io.
+3. Add file > Upload files; upload extracted files/folders to the repo root.
+   Keep index.html at root. Preserve assets/, data/, .github/, docs/ paths.
+4. Commit. Hard-refresh the live site (Ctrl+F5).
+5. IMPORTANT: Because uploading cannot DELETE old files, this ZIP includes
+   a harmless /manage.html replacement and empty manager.js/manager.css.
+   The PUBLIC Cover Manager is thus disabled when this update deploys.
+   For a true 404, optionally delete all three files from GitHub using
+   its file editor after deployment:
+      manage.html
+      assets/manager.js
+      assets/manager.css
+
+Local cover administration runs only from the separate
+DVExperiments_Local_Cover_Manager_v1.6.1.zip on your computer.
+
+GitHub's browser upload does not unpack ZIP archives: EXTRACT FIRST.
+Source is based on saved v1.6.0 full package, NOT an audited latest clone.
+Compare if you have changed the repository in the meantime.

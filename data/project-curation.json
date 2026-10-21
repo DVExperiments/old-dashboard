@@ -1,18 +1,54 @@
 {
   "version": 1,
-  "note": "Edit from manage.html or directly in GitHub. Match keys to lowercase repository names. Cover paths are relative to the dashboard root.",
+  "note": "Manage with the separate local DVExperiments Cover Manager (not deployed publicly). Keys are lowercase repo names; cover paths are relative to the site root.",
   "projects": {
-    "nz-ecosim": {"category": "Simulations & Worlds", "cover": "assets/cover-nz-ecosim.svg", "featured": true},
-    "little-worlds-nz": {"category": "Simulations & Worlds", "cover": "assets/cover-little-worlds.svg"},
-    "little-worlds": {"category": "Simulations & Worlds", "cover": "assets/cover-little-worlds.svg"},
-    "spaceport-07": {"category": "Simulations & Worlds", "cover": "assets/cover-spaceport.svg"},
-    "lumin": {"category": "Creative Experiments", "cover": "assets/lumin-cover.svg", "featured": true},
-    "gamesignal": {"category": "Tools & Utilities", "cover": "assets/cover-gamesignal.svg"},
-    "pocket-pal": {"title": "Nimlets", "category": "Games & Interactive", "cover": "assets/cover-pocket-pal.svg"},
-    "nimlets": {"category": "Games & Interactive", "cover": "assets/cover-pocket-pal.svg"},
-    "worldpulse": {"category": "Data & Visualisation", "featured": true},
-    "goodscroll": {"category": "Tools & Utilities"},
-    "stillroom": {"category": "Tools & Utilities"},
-    "ripple-map": {"category": "Tools & Utilities"}
+    "nz-ecosim": {
+      "category": "Simulations & Worlds",
+      "cover": "assets/cover-nz-ecosim.svg",
+      "featured": true
+    },
+    "little-worlds-nz": {
+      "category": "Simulations & Worlds",
+      "cover": "assets/cover-little-worlds.svg"
+    },
+    "little-worlds": {
+      "category": "Simulations & Worlds",
+      "cover": "assets/cover-little-worlds.svg"
+    },
+    "spaceport-07": {
+      "category": "Simulations & Worlds",
+      "cover": "assets/cover-spaceport.svg"
+    },
+    "lumin": {
+      "category": "Creative Experiments",
+      "cover": "assets/lumin-cover.svg",
+      "featured": true
+    },
+    "gamesignal": {
+      "category": "Tools & Utilities",
+      "cover": "assets/cover-gamesignal.svg"
+    },
+    "pocket-pal": {
+      "title": "Nimlets",
+      "category": "Games & Interactive",
+      "cover": "assets/cover-pocket-pal.svg"
+    },
+    "nimlets": {
+      "category": "Games & Interactive",
+      "cover": "assets/cover-pocket-pal.svg"
+    },
+    "worldpulse": {
+      "category": "Data & Visualisation",
+      "featured": true
+    },
+    "goodscroll": {
+      "category": "Tools & Utilities"
+    },
+    "stillroom": {
+      "category": "Tools & Utilities"
+    },
+    "ripple-map": {
+      "category": "Tools & Utilities"
+    }
   }
 }
