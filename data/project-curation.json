@@ -1,15 +1,15 @@
 {
   "version": 1,
-  "note": "Manage with the separate local DVExperiments Cover Manager (not deployed publicly). Keys are lowercase repo names; cover paths are relative to the site root.",
+  "note": "Edit from manage.html or directly in GitHub. Match keys to lowercase repository names. Cover paths are relative to the dashboard root.",
   "projects": {
     "nz-ecosim": {
       "category": "Simulations & Worlds",
-      "cover": "assets/cover-nz-ecosim.svg",
+      "cover": "assets/project-covers/nz-ecosim.webp",
       "featured": true
     },
     "little-worlds-nz": {
       "category": "Simulations & Worlds",
-      "cover": "assets/cover-little-worlds.svg"
+      "cover": "assets/project-covers/little-worlds-nz.webp"
     },
     "little-worlds": {
       "category": "Simulations & Worlds",
@@ -35,20 +35,33 @@
     },
     "nimlets": {
       "category": "Games & Interactive",
-      "cover": "assets/cover-pocket-pal.svg"
+      "cover": "assets/project-covers/nimlets.webp",
+      "featured": true
     },
     "worldpulse": {
       "category": "Data & Visualisation",
-      "featured": true
+      "featured": false
     },
     "goodscroll": {
-      "category": "Tools & Utilities"
+      "category": "Creative Experiments"
     },
     "stillroom": {
       "category": "Tools & Utilities"
     },
     "ripple-map": {
       "category": "Tools & Utilities"
+    },
+    "earthwire": {
+      "featured": true,
+      "cover": "assets/project-covers/earthwire.webp",
+      "category": "Data & Visualisation"
+    },
+    "worldpulse-2": {
+      "cover": "assets/project-covers/worldpulse-2.webp",
+      "category": "Data & Visualisation"
+    },
+    "lumin2": {
+      "cover": "assets/project-covers/lumin2.webp"
     }
   }
 }
