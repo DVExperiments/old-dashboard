@@ -111,12 +111,11 @@
         case 'za': return list.sort((a,b) => byTitle(b,a));
         case 'recent': return list.sort((a,b) => (Date.parse(b.updatedAt || '') || 0) - (Date.parse(a.updatedAt || '') || 0) || byTitle(a,b));
         case 'oldest': return list.sort((a,b) => (Date.parse(a.updatedAt || '') || Infinity) - (Date.parse(b.updatedAt || '') || Infinity) || byTitle(a,b));
-        default: return list.sort((a,b) => Number(Boolean(b.featured))-Number(Boolean(a.featured)) || Number(b.status === 'live')-Number(a.status === 'live') || byTitle(a,b));
+        default: return list.sort((a,b) => Number(Boolean(b.featured))-Number(Boolean(a.featured)) || a.featuredRank-b.featuredRank || Number(b.status === 'live')-Number(a.status === 'live') || byTitle(a,b));
       }
     }
     function renderFeatured() {
-      const available = projects.filter(p => p.featured);
-      const selected = [...available, ...projects.filter(p => p.status === 'live' && !p.featured)].filter((p,i,a) => a.findIndex(x => x.slug === p.slug) === i).slice(0,3);
+      const selected = projects.filter(p => p.featured).sort((a,b) => a.featuredRank - b.featuredRank || a.title.localeCompare(b.title)).slice(0,6);
       featuredGrid.innerHTML = selected.map(p => `<a class="featured-mini" href="${detailUrl(p)}"><img loading="lazy" src="${escapeHTML(p.image)}" data-fallback="${escapeHTML(collection.FALLBACK[p.category])}" alt=""><span class="featured-mini-body"><span class="featured-mini-kicker">${escapeHTML(p.category)} ↗</span><strong>${escapeHTML(p.title)}</strong><span>${escapeHTML(p.tagline || '')}</span></span></a>`).join('');
       $('#featured-section').hidden = selected.length === 0;
     }
@@ -273,7 +272,9 @@
     stopButton.addEventListener('click', stopEmbed);
 
     function refresh(syncState) {
-      const featured = pinnedLiveProject();
+      // #1 in the editor's ordered selection controls the hero artwork.
+      // The separately curated Live Lab below remains pinned to NZ EcoSim.
+      const featured = projects.filter(p => p.featured).sort((a,b) => a.featuredRank-b.featuredRank)[0] || pinnedLiveProject();
       if (featured) {
         $('#hero-featured-image').src = featured.image;
         $('#hero-featured-image').dataset.fallback = collection.FALLBACK[featured.category] || collection.FALLBACK['Creative Experiments'];
@@ -384,7 +385,7 @@
       update(page === 'home' ? 'error' : false);
     });
   }
-  // Cover Manager shares the identical live catalogue and curation rules.
+  // Public gallery shares identical curation rules with the private Cover Manager.
   window.DV_GET_PROJECTS = () => projects.slice();
   window.DV_CATALOGUE_READY = snapshotReady;
 })();

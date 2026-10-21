@@ -1,4 +1,4 @@
-/* DV Experiments v1.6 — presentation rules shared by gallery, details and Cover Manager. */
+/* DV Experiments v1.6.2 — presentation rules shared by gallery, details and Cover Manager. */
 (() => {
   'use strict';
   const GROUPS = [
@@ -55,6 +55,10 @@
     const rawFeatured = p._sourceFeatured ?? p.featured;
     const override = overrideFor(p);
     const group = groupFor(override.category || rawCategory);
+    const identity = repoName(p);
+    const featuredOrder = Array.isArray(config.featuredOrder) ? config.featuredOrder : null;
+    const rank = featuredOrder ? featuredOrder.indexOf(identity) : -1;
+    const isFeatured = featuredOrder ? rank >= 0 : typeof override.featured === 'boolean' ? override.featured : Boolean(rawFeatured);
     const mapped = validCover(override.cover) ? override.cover : '';
     const original = validCover(rawImage) && !generic(rawImage) ? rawImage : '';
     // The curator can deliberately override an existing per-repository or bundled cover.
@@ -63,7 +67,7 @@
     return {...p, _sourceImage:rawImage, _sourceCategory:rawCategory, _sourceFeatured:rawFeatured,
       title: typeof override.title === 'string' && override.title.trim() ? override.title.trim() : p.title,
       category:group, categoryGroup:group,
-      featured:typeof override.featured === 'boolean' ? override.featured : Boolean(rawFeatured),
+      featured:isFeatured, featuredRank:rank >= 0 ? rank : Number.MAX_SAFE_INTEGER,
       image, imageSource, platformGroup:platformFor(p),
       imageAlt:typeof override.imageAlt === 'string' && override.imageAlt.trim() ? override.imageAlt.trim() : (p.imageAlt || `Cover artwork for ${p.title || 'project'}`)};
   }

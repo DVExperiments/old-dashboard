@@ -1,0 +1,25 @@
+DVEXPERIMENTS v1.6.2 — PUBLIC SITE PATCH ONLY
+==============================================
+
+THIS ZIP IS FOR YOUR PUBLIC GITHUB PAGES REPOSITORY.
+It contains the two HTML pages and two JavaScript files necessary for custom
+featured ordering and hero selection. It intentionally DOES NOT overwrite
+any current project-curation.json or images already present on GitHub.
+
+1. Extract the public patch ZIP. GitHub does NOT extract ZIP files automatically.
+2. Upload the four files to the corresponding paths in the repo root:
+   index.html
+   project.html
+   assets/collection.js
+   assets/site.js
+3. Commit and hard-refresh the public site.
+4. Run the separate LOCAL v1.6.2 manager to choose featured projects, reorder
+   them and revise covers. Export the cover update ZIP and upload its contents
+   to the matching paths in GitHub. Commit and hard-refresh again.
+
+The homepage hero displays your FIRST featured item; Live Lab remains NZ EcoSim.
+The featured gallery displays only the explicitly selected items (max six).
+A missing featuredOrder field in older metadata retains legacy featured flags.
+
+IMPORTANT: This is based on the previously delivered v1.6.1 site; review changes
+if you have since made direct edits to index.html or project.html.
