@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T21:45:37.749947+00:00",
+  "generatedAt": "2026-10-23T05:03:34.552794+00:00",
   "projects": [
     {
       "slug": "little-worlds-nz",
@@ -96,7 +96,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-21T07:35:37Z",
+      "updatedAt": "2026-10-23T02:57:01Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for earthwire",
       "overview": [
@@ -119,7 +119,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-22T18:15:16Z",
+      "updatedAt": "2026-10-23T02:32:50Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for etymology",
       "overview": [
@@ -133,6 +133,29 @@
       "notice": "GitHub Pages is enabled."
     },
     {
+      "slug": "glacial",
+      "title": "Glacial",
+      "tagline": "The Worlds Slowest Race - Every race is generated deterministically from its date, so every visitor sees ",
+      "description": "The Worlds Slowest Race - Every race is generated deterministically from its date, so every visitor sees the same race at the same moment, and the browser rebuilds the full history (ratings, stats, records) on each visit.",
+      "category": "Experiments",
+      "platform": "JavaScript",
+      "year": "2026",
+      "featured": false,
+      "embed": false,
+      "updatedAt": "2026-10-23T02:29:23Z",
+      "image": "assets/cover-default.svg",
+      "imageAlt": "Artwork for Glacial",
+      "overview": [
+        "The Worlds Slowest Race - Every race is generated deterministically from its date, so every visitor sees the same race at the same moment, and the browser rebuilds the full history (ratings, stats, records) on each visit."
+      ],
+      "highlights": [],
+      "tags": [],
+      "status": "live",
+      "liveUrl": "https://dvexperiments.github.io/Glacial/",
+      "repoUrl": "https://github.com/DVExperiments/Glacial",
+      "notice": "GitHub Pages is enabled."
+    },
+    {
       "slug": "goodscroll",
       "title": "Goodscroll",
       "tagline": "Public project in the DV Experiments collection: Goodscroll.",
@@ -142,7 +165,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-22T17:21:29Z",
+      "updatedAt": "2026-10-23T02:29:48Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for Goodscroll",
       "overview": [
@@ -208,8 +231,8 @@
     {
       "slug": "lumin2",
       "title": "Lumin2",
-      "tagline": "LUMIN by Claude",
-      "description": "LUMIN by Claude",
+      "tagline": "LUMIN is a browser-based generative artwork. A luminous creature drifts on screen: it has a translucent m",
+      "description": "LUMIN is a browser-based generative artwork. A luminous creature drifts on screen: it has a translucent membrane, a heavy beating nucleus, swimming filaments that carry pulses of light, and a cloud of spores. It reacts to the real weather where it lives. More importantly, it remembers that weather. ",
       "category": "Experiments",
       "platform": "TypeScript",
       "year": "2026",
@@ -219,7 +242,7 @@
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for LUMIN2",
       "overview": [
-        "LUMIN by Claude"
+        "LUMIN is a browser-based generative artwork. A luminous creature drifts on screen: it has a translucent membrane, a heavy beating nucleus, swimming filaments that carry pulses of light, and a cloud of spores. It reacts to the real weather where it lives. More importantly, it remembers that weather. "
       ],
       "highlights": [],
       "tags": [],
@@ -342,6 +365,29 @@
       "notice": "The README describes a Windows desktop application built with Python, Pygame and NumPy. Python is required to run the source version; a Windows executable can be built separately. Any GitHub Pages link may be a project website rather than a browser-playable version. This is a simplified interactive ecosystem model, not a validated predictor of real-world conservation outcomes."
     },
     {
+      "slug": "old-dashboard",
+      "title": "Old Dashboard",
+      "tagline": "The DVExperiments Dahsboard",
+      "description": "The DVExperiments Dahsboard",
+      "category": "Experiments",
+      "platform": "JavaScript",
+      "year": "2026",
+      "featured": false,
+      "embed": false,
+      "updatedAt": "2026-10-22T21:45:38Z",
+      "image": "assets/cover-default.svg",
+      "imageAlt": "Artwork for old-dashboard",
+      "overview": [
+        "The DVExperiments Dahsboard"
+      ],
+      "highlights": [],
+      "tags": [],
+      "status": "live",
+      "liveUrl": "https://dvexperiments.github.io/old-dashboard/",
+      "repoUrl": "https://github.com/DVExperiments/old-dashboard",
+      "notice": "GitHub Pages is enabled."
+    },
+    {
       "slug": "ripple-map",
       "title": "Ripple Map",
       "tagline": "Everything is connected.",
@@ -400,7 +446,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-22T19:31:55Z",
+      "updatedAt": "2026-10-23T02:30:25Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for tech-brief",
       "overview": [
@@ -468,7 +514,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-22T18:18:26Z",
+      "updatedAt": "2026-10-23T00:28:50Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for WorldPulse",
       "overview": [
@@ -484,8 +530,8 @@
     {
       "slug": "worldpulse-2",
       "title": "Worldpulse 2",
-      "tagline": "Public project in the DV Experiments collection: WorldPulse-2.",
-      "description": "Public project in the DV Experiments collection: WorldPulse-2.",
+      "tagline": "The frontend for WorldPulse",
+      "description": "The frontend for WorldPulse",
       "category": "Experiments",
       "platform": "JavaScript",
       "year": "2026",
@@ -495,7 +541,7 @@
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for WorldPulse-2",
       "overview": [
-        "Public project in the DV Experiments collection: WorldPulse-2."
+        "The frontend for WorldPulse"
       ],
       "highlights": [],
       "tags": [],
