@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T17:17:40.325447+00:00",
+  "generatedAt": "2026-10-23T21:31:25.561936+00:00",
   "projects": [
     {
       "slug": "little-worlds-nz",
@@ -42,6 +42,29 @@
       "liveUrl": "https://dvexperiments.github.io/Little-Worlds-NZ/",
       "repoUrl": "https://github.com/DVExperiments/Little-Worlds-NZ",
       "notice": "Experimental educational sandbox, not a scientifically calibrated ecological model. Each visitor has a separate browser-based world."
+    },
+    {
+      "slug": "city",
+      "title": "City",
+      "tagline": "Public project in the DV Experiments collection: City.",
+      "description": "Public project in the DV Experiments collection: City.",
+      "category": "Experiments",
+      "platform": "JavaScript",
+      "year": "2026",
+      "featured": false,
+      "embed": false,
+      "updatedAt": "2026-10-23T18:14:41Z",
+      "image": "assets/cover-default.svg",
+      "imageAlt": "Artwork for City",
+      "overview": [
+        "Public project in the DV Experiments collection: City."
+      ],
+      "highlights": [],
+      "tags": [],
+      "status": "live",
+      "liveUrl": "https://dvexperiments.github.io/City/",
+      "repoUrl": "https://github.com/DVExperiments/City",
+      "notice": "GitHub Pages is enabled."
     },
     {
       "slug": "design-shift",
@@ -165,7 +188,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-23T09:00:28Z",
+      "updatedAt": "2026-10-23T17:55:13Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for Glacial",
       "overview": [
@@ -188,7 +211,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-23T11:51:33Z",
+      "updatedAt": "2026-10-23T17:18:37Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for Goodscroll",
       "overview": [
@@ -397,7 +420,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-23T11:50:46Z",
+      "updatedAt": "2026-10-23T17:17:41Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for old-dashboard",
       "overview": [
@@ -469,7 +492,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-23T09:00:55Z",
+      "updatedAt": "2026-10-23T17:57:20Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for Senate",
       "overview": [
@@ -492,7 +515,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-23T15:55:53Z",
+      "updatedAt": "2026-10-23T19:57:33Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for tech-brief",
       "overview": [
@@ -551,6 +574,29 @@
       "notice": "An educational practice activity, not a technical audit. Scores measure reference classification and reflection completion, not factual accuracy. History is stored in each visitor's browser."
     },
     {
+      "slug": "weather",
+      "title": "Weather",
+      "tagline": "Public project in the DV Experiments collection: Weather.",
+      "description": "Public project in the DV Experiments collection: Weather.",
+      "category": "Experiments",
+      "platform": "JavaScript",
+      "year": "2026",
+      "featured": false,
+      "embed": false,
+      "updatedAt": "2026-10-23T18:22:05Z",
+      "image": "assets/cover-default.svg",
+      "imageAlt": "Artwork for Weather",
+      "overview": [
+        "Public project in the DV Experiments collection: Weather."
+      ],
+      "highlights": [],
+      "tags": [],
+      "status": "live",
+      "liveUrl": "https://dvexperiments.github.io/Weather/",
+      "repoUrl": "https://github.com/DVExperiments/Weather",
+      "notice": "GitHub Pages is enabled."
+    },
+    {
       "slug": "worldpulse",
       "title": "Worldpulse",
       "tagline": "WorldPulse - Tracking the News",
@@ -560,7 +606,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-23T15:25:30Z",
+      "updatedAt": "2026-10-23T19:34:18Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for WorldPulse",
       "overview": [
