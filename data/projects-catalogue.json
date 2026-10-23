@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T11:50:44.013607+00:00",
+  "generatedAt": "2026-10-23T17:17:40.325447+00:00",
   "projects": [
     {
       "slug": "little-worlds-nz",
@@ -188,7 +188,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-23T05:04:53Z",
+      "updatedAt": "2026-10-23T11:51:33Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for Goodscroll",
       "overview": [
@@ -397,7 +397,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-23T05:03:35Z",
+      "updatedAt": "2026-10-23T11:50:46Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for old-dashboard",
       "overview": [
@@ -492,7 +492,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-23T11:40:51Z",
+      "updatedAt": "2026-10-23T15:55:53Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for tech-brief",
       "overview": [
@@ -560,7 +560,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-23T10:23:33Z",
+      "updatedAt": "2026-10-23T15:25:30Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for WorldPulse",
       "overview": [
