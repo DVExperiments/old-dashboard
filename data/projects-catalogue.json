@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T05:03:34.552794+00:00",
+  "generatedAt": "2026-10-23T11:50:44.013607+00:00",
   "projects": [
     {
       "slug": "little-worlds-nz",
@@ -96,7 +96,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-23T02:57:01Z",
+      "updatedAt": "2026-10-23T05:59:40Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for earthwire",
       "overview": [
@@ -133,6 +133,29 @@
       "notice": "GitHub Pages is enabled."
     },
     {
+      "slug": "formicarium",
+      "title": "Formicarium",
+      "tagline": "A real-time ant colony ecosystem you observe rather than control. Every ant is an independent agent; trai",
+      "description": "A real-time ant colony ecosystem you observe rather than control. Every ant is an independent agent; trails, nests, territories, booms and collapses emerge from simple biological rules.",
+      "category": "Experiments",
+      "platform": "JavaScript",
+      "year": "2026",
+      "featured": false,
+      "embed": false,
+      "updatedAt": "2026-10-23T05:54:03Z",
+      "image": "assets/cover-default.svg",
+      "imageAlt": "Artwork for formicarium",
+      "overview": [
+        "A real-time ant colony ecosystem you observe rather than control. Every ant is an independent agent; trails, nests, territories, booms and collapses emerge from simple biological rules."
+      ],
+      "highlights": [],
+      "tags": [],
+      "status": "live",
+      "liveUrl": "https://dvexperiments.github.io/formicarium/",
+      "repoUrl": "https://github.com/DVExperiments/formicarium",
+      "notice": "GitHub Pages is enabled."
+    },
+    {
       "slug": "glacial",
       "title": "Glacial",
       "tagline": "The Worlds Slowest Race - Every race is generated deterministically from its date, so every visitor sees ",
@@ -142,7 +165,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-23T02:29:23Z",
+      "updatedAt": "2026-10-23T09:00:28Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for Glacial",
       "overview": [
@@ -165,7 +188,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-23T02:29:48Z",
+      "updatedAt": "2026-10-23T05:04:53Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for Goodscroll",
       "overview": [
@@ -374,7 +397,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-22T21:45:38Z",
+      "updatedAt": "2026-10-23T05:03:35Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for old-dashboard",
       "overview": [
@@ -437,6 +460,29 @@
       "notice": "Curated educational models, not real-time engineering simulations or validated failure predictions. Activity completion is not a factual grade. Student work is stored privately in each visitor's own browser."
     },
     {
+      "slug": "senate",
+      "title": "Senate",
+      "tagline": "The Pixel Senate",
+      "description": "The Pixel Senate",
+      "category": "Experiments",
+      "platform": "JavaScript",
+      "year": "2026",
+      "featured": false,
+      "embed": false,
+      "updatedAt": "2026-10-23T09:00:55Z",
+      "image": "assets/cover-default.svg",
+      "imageAlt": "Artwork for Senate",
+      "overview": [
+        "The Pixel Senate"
+      ],
+      "highlights": [],
+      "tags": [],
+      "status": "live",
+      "liveUrl": "https://dvexperiments.github.io/Senate/",
+      "repoUrl": "https://github.com/DVExperiments/Senate",
+      "notice": "GitHub Pages is enabled."
+    },
+    {
       "slug": "tech-brief",
       "title": "Tech Brief",
       "tagline": "Public project in the DV Experiments collection: tech-brief.",
@@ -446,7 +492,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-23T02:30:25Z",
+      "updatedAt": "2026-10-23T11:40:51Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for tech-brief",
       "overview": [
@@ -514,7 +560,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-23T00:28:50Z",
+      "updatedAt": "2026-10-23T10:23:33Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for WorldPulse",
       "overview": [
