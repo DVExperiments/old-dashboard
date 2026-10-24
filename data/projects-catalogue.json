@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T21:31:25.561936+00:00",
+  "generatedAt": "2026-10-24T04:48:10.179142+00:00",
   "projects": [
     {
       "slug": "little-worlds-nz",
@@ -44,6 +44,29 @@
       "notice": "Experimental educational sandbox, not a scientifically calibrated ecological model. Each visitor has a separate browser-based world."
     },
     {
+      "slug": "bookmaker",
+      "title": "Bookmaker",
+      "tagline": "Pixel City Bookkeeper",
+      "description": "Pixel City Bookkeeper",
+      "category": "Experiments",
+      "platform": "JavaScript",
+      "year": "2026",
+      "featured": false,
+      "embed": false,
+      "updatedAt": "2026-10-24T03:14:16Z",
+      "image": "assets/cover-default.svg",
+      "imageAlt": "Artwork for Bookmaker",
+      "overview": [
+        "Pixel City Bookkeeper"
+      ],
+      "highlights": [],
+      "tags": [],
+      "status": "live",
+      "liveUrl": "https://dvexperiments.github.io/Bookmaker/",
+      "repoUrl": "https://github.com/DVExperiments/Bookmaker",
+      "notice": "GitHub Pages is enabled."
+    },
+    {
       "slug": "city",
       "title": "City",
       "tagline": "Public project in the DV Experiments collection: City.",
@@ -53,7 +76,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-23T18:14:41Z",
+      "updatedAt": "2026-10-24T04:33:57Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for City",
       "overview": [
@@ -64,6 +87,29 @@
       "status": "live",
       "liveUrl": "https://dvexperiments.github.io/City/",
       "repoUrl": "https://github.com/DVExperiments/City",
+      "notice": "GitHub Pages is enabled."
+    },
+    {
+      "slug": "dailypixel",
+      "title": "Dailypixel",
+      "tagline": "The Daily Pixel - Pixel News",
+      "description": "The Daily Pixel - Pixel News",
+      "category": "Experiments",
+      "platform": "JavaScript",
+      "year": "2026",
+      "featured": false,
+      "embed": false,
+      "updatedAt": "2026-10-24T03:14:40Z",
+      "image": "assets/cover-default.svg",
+      "imageAlt": "Artwork for DailyPixel",
+      "overview": [
+        "The Daily Pixel - Pixel News"
+      ],
+      "highlights": [],
+      "tags": [],
+      "status": "live",
+      "liveUrl": "https://dvexperiments.github.io/DailyPixel/",
+      "repoUrl": "https://github.com/DVExperiments/DailyPixel",
       "notice": "GitHub Pages is enabled."
     },
     {
@@ -188,7 +234,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-23T17:55:13Z",
+      "updatedAt": "2026-10-24T03:12:45Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for Glacial",
       "overview": [
@@ -211,7 +257,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-23T17:18:37Z",
+      "updatedAt": "2026-10-23T21:32:20Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for Goodscroll",
       "overview": [
@@ -295,6 +341,29 @@
       "status": "live",
       "liveUrl": "https://dvexperiments.github.io/LUMIN2/",
       "repoUrl": "https://github.com/DVExperiments/LUMIN2",
+      "notice": "GitHub Pages is enabled."
+    },
+    {
+      "slug": "museum",
+      "title": "Museum",
+      "tagline": "The Pixel Museum",
+      "description": "The Pixel Museum",
+      "category": "Experiments",
+      "platform": "JavaScript",
+      "year": "2026",
+      "featured": false,
+      "embed": false,
+      "updatedAt": "2026-10-24T03:15:01Z",
+      "image": "assets/cover-default.svg",
+      "imageAlt": "Artwork for Museum",
+      "overview": [
+        "The Pixel Museum"
+      ],
+      "highlights": [],
+      "tags": [],
+      "status": "live",
+      "liveUrl": "https://dvexperiments.github.io/Museum/",
+      "repoUrl": "https://github.com/DVExperiments/Museum",
       "notice": "GitHub Pages is enabled."
     },
     {
@@ -420,7 +489,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-23T17:17:41Z",
+      "updatedAt": "2026-10-23T21:31:26Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for old-dashboard",
       "overview": [
@@ -431,6 +500,52 @@
       "status": "live",
       "liveUrl": "https://dvexperiments.github.io/old-dashboard/",
       "repoUrl": "https://github.com/DVExperiments/old-dashboard",
+      "notice": "GitHub Pages is enabled."
+    },
+    {
+      "slug": "pixelfm",
+      "title": "Pixelfm",
+      "tagline": "Pixel City Radio",
+      "description": "Pixel City Radio",
+      "category": "Experiments",
+      "platform": "JavaScript",
+      "year": "2026",
+      "featured": false,
+      "embed": false,
+      "updatedAt": "2026-10-24T03:59:45Z",
+      "image": "assets/cover-default.svg",
+      "imageAlt": "Artwork for PixelFM",
+      "overview": [
+        "Pixel City Radio"
+      ],
+      "highlights": [],
+      "tags": [],
+      "status": "live",
+      "liveUrl": "https://dvexperiments.github.io/PixelFM/",
+      "repoUrl": "https://github.com/DVExperiments/PixelFM",
+      "notice": "GitHub Pages is enabled."
+    },
+    {
+      "slug": "pixelhigh",
+      "title": "Pixelhigh",
+      "tagline": "Pixel City High School",
+      "description": "Pixel City High School",
+      "category": "Experiments",
+      "platform": "JavaScript",
+      "year": "2026",
+      "featured": false,
+      "embed": false,
+      "updatedAt": "2026-10-24T04:35:07Z",
+      "image": "assets/cover-default.svg",
+      "imageAlt": "Artwork for PixelHigh",
+      "overview": [
+        "Pixel City High School"
+      ],
+      "highlights": [],
+      "tags": [],
+      "status": "live",
+      "liveUrl": "https://dvexperiments.github.io/PixelHigh/",
+      "repoUrl": "https://github.com/DVExperiments/PixelHigh",
       "notice": "GitHub Pages is enabled."
     },
     {
@@ -492,7 +607,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-23T17:57:20Z",
+      "updatedAt": "2026-10-24T03:13:18Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for Senate",
       "overview": [
@@ -515,7 +630,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-23T19:57:33Z",
+      "updatedAt": "2026-10-23T23:09:53Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for tech-brief",
       "overview": [
@@ -574,6 +689,29 @@
       "notice": "An educational practice activity, not a technical audit. Scores measure reference classification and reflection completion, not factual accuracy. History is stored in each visitor's browser."
     },
     {
+      "slug": "universe",
+      "title": "Universe",
+      "tagline": "The Pixel Universe",
+      "description": "The Pixel Universe",
+      "category": "Experiments",
+      "platform": "JavaScript",
+      "year": "2026",
+      "featured": false,
+      "embed": false,
+      "updatedAt": "2026-10-24T04:36:13Z",
+      "image": "assets/cover-default.svg",
+      "imageAlt": "Artwork for Universe",
+      "overview": [
+        "The Pixel Universe"
+      ],
+      "highlights": [],
+      "tags": [],
+      "status": "live",
+      "liveUrl": "https://dvexperiments.github.io/Universe/",
+      "repoUrl": "https://github.com/DVExperiments/Universe",
+      "notice": "GitHub Pages is enabled."
+    },
+    {
       "slug": "weather",
       "title": "Weather",
       "tagline": "Public project in the DV Experiments collection: Weather.",
@@ -583,7 +721,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-23T18:22:05Z",
+      "updatedAt": "2026-10-24T03:54:41Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for Weather",
       "overview": [
@@ -606,7 +744,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-23T19:34:18Z",
+      "updatedAt": "2026-10-24T01:18:57Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for WorldPulse",
       "overview": [
