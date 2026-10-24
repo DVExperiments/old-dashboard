@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T04:48:10.179142+00:00",
+  "generatedAt": "2026-10-24T11:17:13.892550+00:00",
   "projects": [
     {
       "slug": "little-worlds-nz",
@@ -76,7 +76,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-24T04:33:57Z",
+      "updatedAt": "2026-10-24T09:05:06Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for City",
       "overview": [
@@ -156,6 +156,29 @@
       "notice": "The practice score measures completion and suggested audience priorities, not creativity or factual accuracy. History remains on each visitor's device; use a JSON backup to move it."
     },
     {
+      "slug": "dialogue-lab",
+      "title": "Dialogue Lab",
+      "tagline": "Will they agree? Two different AI models take turns in an ongoing, archived conversation. GitHub Actions ",
+      "description": "Will they agree? Two different AI models take turns in an ongoing, archived conversation. GitHub Actions continues the dialogue every 30 minutes; GitHub Pages displays all messages and provisional outcomes.",
+      "category": "Experiments",
+      "platform": "Python",
+      "year": "2026",
+      "featured": false,
+      "embed": false,
+      "updatedAt": "2026-10-24T08:05:11Z",
+      "image": "assets/cover-default.svg",
+      "imageAlt": "Artwork for dialogue-lab",
+      "overview": [
+        "Will they agree? Two different AI models take turns in an ongoing, archived conversation. GitHub Actions continues the dialogue every 30 minutes; GitHub Pages displays all messages and provisional outcomes."
+      ],
+      "highlights": [],
+      "tags": [],
+      "status": "live",
+      "liveUrl": "https://dvexperiments.github.io/dialogue-lab/",
+      "repoUrl": "https://github.com/DVExperiments/dialogue-lab",
+      "notice": "GitHub Pages is enabled."
+    },
+    {
       "slug": "earthwire",
       "title": "Earthwire",
       "tagline": "The world’s news, where it happens. A holographic globe of the last 24 hours of world news, built on GDEL",
@@ -199,6 +222,29 @@
       "status": "live",
       "liveUrl": "https://dvexperiments.github.io/etymology/",
       "repoUrl": "https://github.com/DVExperiments/etymology",
+      "notice": "GitHub Pages is enabled."
+    },
+    {
+      "slug": "exchange",
+      "title": "Exchange",
+      "tagline": "The Pixel Stock Exchange",
+      "description": "The Pixel Stock Exchange",
+      "category": "Experiments",
+      "platform": "JavaScript",
+      "year": "2026",
+      "featured": false,
+      "embed": false,
+      "updatedAt": "2026-10-24T09:18:39Z",
+      "image": "assets/cover-default.svg",
+      "imageAlt": "Artwork for Exchange",
+      "overview": [
+        "The Pixel Stock Exchange"
+      ],
+      "highlights": [],
+      "tags": [],
+      "status": "live",
+      "liveUrl": "https://dvexperiments.github.io/Exchange/",
+      "repoUrl": "https://github.com/DVExperiments/Exchange",
       "notice": "GitHub Pages is enabled."
     },
     {
@@ -257,7 +303,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-23T21:32:20Z",
+      "updatedAt": "2026-10-24T04:49:20Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for Goodscroll",
       "overview": [
@@ -268,6 +314,29 @@
       "status": "live",
       "liveUrl": "https://dvexperiments.github.io/Goodscroll/",
       "repoUrl": "https://github.com/DVExperiments/Goodscroll",
+      "notice": "GitHub Pages is enabled."
+    },
+    {
+      "slug": "jobcentre",
+      "title": "Jobcentre",
+      "tagline": "Pixel Job Centre",
+      "description": "Pixel Job Centre",
+      "category": "Experiments",
+      "platform": "JavaScript",
+      "year": "2026",
+      "featured": false,
+      "embed": false,
+      "updatedAt": "2026-10-24T09:05:57Z",
+      "image": "assets/cover-default.svg",
+      "imageAlt": "Artwork for JobCentre",
+      "overview": [
+        "Pixel Job Centre"
+      ],
+      "highlights": [],
+      "tags": [],
+      "status": "live",
+      "liveUrl": "https://dvexperiments.github.io/JobCentre/",
+      "repoUrl": "https://github.com/DVExperiments/JobCentre",
       "notice": "GitHub Pages is enabled."
     },
     {
@@ -489,7 +558,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-23T21:31:26Z",
+      "updatedAt": "2026-10-24T04:48:11Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for old-dashboard",
       "overview": [
@@ -535,7 +604,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-24T04:35:07Z",
+      "updatedAt": "2026-10-24T09:06:46Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for PixelHigh",
       "overview": [
@@ -698,7 +767,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-24T04:36:13Z",
+      "updatedAt": "2026-10-24T09:19:17Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for Universe",
       "overview": [
@@ -744,7 +813,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-24T01:18:57Z",
+      "updatedAt": "2026-10-24T06:09:59Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for WorldPulse",
       "overview": [
