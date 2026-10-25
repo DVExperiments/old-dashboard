@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T16:35:20.355282+00:00",
+  "generatedAt": "2026-10-25T20:58:41.805149+00:00",
   "projects": [
     {
       "slug": "little-worlds-nz",
@@ -188,7 +188,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-25T13:56:02Z",
+      "updatedAt": "2026-10-25T19:58:42Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for dialogue-lab",
       "overview": [
@@ -326,7 +326,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-25T11:47:40Z",
+      "updatedAt": "2026-10-25T16:36:29Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for Goodscroll",
       "overview": [
@@ -581,7 +581,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-25T11:46:40Z",
+      "updatedAt": "2026-10-25T16:35:21Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for old-dashboard",
       "overview": [
@@ -722,7 +722,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-25T15:03:39Z",
+      "updatedAt": "2026-10-25T18:24:44Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for tech-brief",
       "overview": [
@@ -859,7 +859,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-25T14:38:02Z",
+      "updatedAt": "2026-10-25T18:06:36Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for WorldPulse",
       "overview": [
@@ -893,6 +893,29 @@
       "status": "live",
       "liveUrl": "https://dvexperiments.github.io/WorldPulse-2/",
       "repoUrl": "https://github.com/DVExperiments/WorldPulse-2",
+      "notice": "GitHub Pages is enabled."
+    },
+    {
+      "slug": "wrong-machine",
+      "title": "Wrong Machine",
+      "tagline": "Public project in the DV Experiments collection: Wrong-Machine.",
+      "description": "Public project in the DV Experiments collection: Wrong-Machine.",
+      "category": "Experiments",
+      "platform": "HTML",
+      "year": "2026",
+      "featured": false,
+      "embed": false,
+      "updatedAt": "2026-10-25T18:54:07Z",
+      "image": "assets/cover-default.svg",
+      "imageAlt": "Artwork for Wrong-Machine",
+      "overview": [
+        "Public project in the DV Experiments collection: Wrong-Machine."
+      ],
+      "highlights": [],
+      "tags": [],
+      "status": "live",
+      "liveUrl": "https://dvexperiments.github.io/Wrong-Machine/",
+      "repoUrl": "https://github.com/DVExperiments/Wrong-Machine",
       "notice": "GitHub Pages is enabled."
     },
     {
