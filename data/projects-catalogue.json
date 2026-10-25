@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T11:46:39.603158+00:00",
+  "generatedAt": "2026-10-25T16:35:20.355282+00:00",
   "projects": [
     {
       "slug": "little-worlds-nz",
@@ -188,7 +188,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-25T09:26:24Z",
+      "updatedAt": "2026-10-25T13:56:02Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for dialogue-lab",
       "overview": [
@@ -326,7 +326,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-25T04:57:48Z",
+      "updatedAt": "2026-10-25T11:47:40Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for Goodscroll",
       "overview": [
@@ -581,7 +581,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-25T04:56:45Z",
+      "updatedAt": "2026-10-25T11:46:40Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for old-dashboard",
       "overview": [
@@ -722,7 +722,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-25T11:39:21Z",
+      "updatedAt": "2026-10-25T15:03:39Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for tech-brief",
       "overview": [
@@ -859,7 +859,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-25T10:23:18Z",
+      "updatedAt": "2026-10-25T14:38:02Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for WorldPulse",
       "overview": [
