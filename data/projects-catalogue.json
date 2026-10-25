@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T20:59:18.767799+00:00",
+  "generatedAt": "2026-10-25T04:56:44.950962+00:00",
   "projects": [
     {
       "slug": "little-worlds-nz",
@@ -53,7 +53,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-24T18:37:14Z",
+      "updatedAt": "2026-10-25T01:05:40Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for Bank",
       "overview": [
@@ -69,18 +69,18 @@
     {
       "slug": "bookmaker",
       "title": "Bookmaker",
-      "tagline": "Pixel City Bookkeeper",
-      "description": "Pixel City Bookkeeper",
+      "tagline": "Pixel City Bookmaker: The betting shop of the Pixel Universe. It prices every Glacial race, takes bets fr",
+      "description": "Pixel City Bookmaker: The betting shop of the Pixel Universe. It prices every Glacial race, takes bets from 48 resident regulars of Pixel City whose money moves the prices, and lets visitors bet alongside them in play money.",
       "category": "Experiments",
       "platform": "JavaScript",
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-24T18:00:56Z",
+      "updatedAt": "2026-10-25T01:07:52Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for Bookmaker",
       "overview": [
-        "Pixel City Bookkeeper"
+        "Pixel City Bookmaker: The betting shop of the Pixel Universe. It prices every Glacial race, takes bets from 48 resident regulars of Pixel City whose money moves the prices, and lets visitors bet alongside them in play money."
       ],
       "highlights": [],
       "tags": [],
@@ -99,7 +99,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-24T20:31:18Z",
+      "updatedAt": "2026-10-25T02:46:28Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for City",
       "overview": [
@@ -115,18 +115,18 @@
     {
       "slug": "dailypixel",
       "title": "Dailypixel",
-      "tagline": "The Daily Pixel - Pixel News",
-      "description": "The Daily Pixel - Pixel News",
+      "tagline": "The Daily Pixel: The newspaper of the Pixel Universe. A new edition is published every day at 00:00 UTC, ",
+      "description": "The Daily Pixel: The newspaper of the Pixel Universe. A new edition is published every day at 00:00 UTC, covering the 24 hours before it, and every past edition can be read from the archive. Each edition is a pure function of its date, so everyone reads the same paper.",
       "category": "Experiments",
       "platform": "JavaScript",
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-24T20:34:12Z",
+      "updatedAt": "2026-10-25T01:08:23Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for DailyPixel",
       "overview": [
-        "The Daily Pixel - Pixel News"
+        "The Daily Pixel: The newspaper of the Pixel Universe. A new edition is published every day at 00:00 UTC, covering the 24 hours before it, and every past edition can be read from the archive. Each edition is a pure function of its date, so everyone reads the same paper."
       ],
       "highlights": [],
       "tags": [],
@@ -188,7 +188,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-24T19:01:22Z",
+      "updatedAt": "2026-10-25T04:40:19Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for dialogue-lab",
       "overview": [
@@ -250,18 +250,18 @@
     {
       "slug": "exchange",
       "title": "Exchange",
-      "tagline": "The Pixel Stock Exchange",
-      "description": "The Pixel Stock Exchange",
+      "tagline": "The Pixel Stock Exchange: Every business in Pixel City, trading. ",
+      "description": "The Pixel Stock Exchange: Every business in Pixel City, trading. ",
       "category": "Experiments",
       "platform": "JavaScript",
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-24T19:25:43Z",
+      "updatedAt": "2026-10-25T01:02:25Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for Exchange",
       "overview": [
-        "The Pixel Stock Exchange"
+        "The Pixel Stock Exchange: Every business in Pixel City, trading. "
       ],
       "highlights": [],
       "tags": [],
@@ -303,7 +303,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-24T18:00:14Z",
+      "updatedAt": "2026-10-25T01:04:58Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for Glacial",
       "overview": [
@@ -326,7 +326,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-24T16:06:01Z",
+      "updatedAt": "2026-10-24T20:59:46Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for Goodscroll",
       "overview": [
@@ -342,18 +342,18 @@
     {
       "slug": "jobcentre",
       "title": "Jobcentre",
-      "tagline": "Pixel Job Centre",
-      "description": "Pixel Job Centre",
+      "tagline": "Pixel City's Job Centre: vacancies, the queue, employers and every pixel's working life.",
+      "description": "Pixel City's Job Centre: vacancies, the queue, employers and every pixel's working life.",
       "category": "Experiments",
       "platform": "JavaScript",
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-24T18:03:00Z",
+      "updatedAt": "2026-10-25T01:06:54Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for JobCentre",
       "overview": [
-        "Pixel Job Centre"
+        "Pixel City's Job Centre: vacancies, the queue, employers and every pixel's working life."
       ],
       "highlights": [],
       "tags": [],
@@ -438,18 +438,18 @@
     {
       "slug": "museum",
       "title": "Museum",
-      "tagline": "The Pixel Museum",
-      "description": "The Pixel Museum",
+      "tagline": "The Pixel Museum: The history of the universe, and its memory. ",
+      "description": "The Pixel Museum: The history of the universe, and its memory. ",
       "category": "Experiments",
       "platform": "JavaScript",
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-24T19:27:52Z",
+      "updatedAt": "2026-10-25T01:50:13Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for Museum",
       "overview": [
-        "The Pixel Museum"
+        "The Pixel Museum: The history of the universe, and its memory. "
       ],
       "highlights": [],
       "tags": [],
@@ -581,7 +581,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-24T16:05:13Z",
+      "updatedAt": "2026-10-24T20:59:19Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for old-dashboard",
       "overview": [
@@ -597,18 +597,18 @@
     {
       "slug": "pixelfm",
       "title": "Pixelfm",
-      "tagline": "Pixel City Radio",
-      "description": "Pixel City Radio",
+      "tagline": "Pixel City Radio: The radio station of the Pixel Universe: generated music, generated presenters, on air ",
+      "description": "Pixel City Radio: The radio station of the Pixel Universe: generated music, generated presenters, on air around the clock. ",
       "category": "Experiments",
       "platform": "JavaScript",
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-24T17:59:30Z",
+      "updatedAt": "2026-10-25T01:24:16Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for PixelFM",
       "overview": [
-        "Pixel City Radio"
+        "Pixel City Radio: The radio station of the Pixel Universe: generated music, generated presenters, on air around the clock. "
       ],
       "highlights": [],
       "tags": [],
@@ -620,18 +620,18 @@
     {
       "slug": "pixelhigh",
       "title": "Pixelhigh",
-      "tagline": "Pixel City High School",
-      "description": "Pixel City High School",
+      "tagline": "Pixel City High School: Every pixel counts. The secondary school of Pixel City.",
+      "description": "Pixel City High School: Every pixel counts. The secondary school of Pixel City.",
       "category": "Experiments",
       "platform": "JavaScript",
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-24T18:03:45Z",
+      "updatedAt": "2026-10-25T01:07:20Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for PixelHigh",
       "overview": [
-        "Pixel City High School"
+        "Pixel City High School: Every pixel counts. The secondary school of Pixel City."
       ],
       "highlights": [],
       "tags": [],
@@ -692,18 +692,18 @@
     {
       "slug": "senate",
       "title": "Senate",
-      "tagline": "The Pixel Senate",
-      "description": "The Pixel Senate",
+      "tagline": "The Pixel Senate: A deadpan senate of 48 pixels that debates, votes, filibusters and holds elections fore",
+      "description": "The Pixel Senate: A deadpan senate of 48 pixels that debates, votes, filibusters and holds elections forever, with nobody steering. Part of the Pixel Universe; follows the Pixel Universe Shared Conventions.",
       "category": "Experiments",
       "platform": "JavaScript",
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-24T20:33:33Z",
+      "updatedAt": "2026-10-25T01:03:21Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for Senate",
       "overview": [
-        "The Pixel Senate"
+        "The Pixel Senate: A deadpan senate of 48 pixels that debates, votes, filibusters and holds elections forever, with nobody steering. Part of the Pixel Universe; follows the Pixel Universe Shared Conventions."
       ],
       "highlights": [],
       "tags": [],
@@ -722,7 +722,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-24T20:51:18Z",
+      "updatedAt": "2026-10-24T23:15:56Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for tech-brief",
       "overview": [
@@ -783,18 +783,18 @@
     {
       "slug": "universe",
       "title": "Universe",
-      "tagline": "The Pixel Universe",
-      "description": "The Pixel Universe",
+      "tagline": "The Pixel Universe: Windows onto every site, each live and each a link to its site.",
+      "description": "The Pixel Universe: Windows onto every site, each live and each a link to its site.",
       "category": "Experiments",
       "platform": "JavaScript",
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-24T20:34:55Z",
+      "updatedAt": "2026-10-25T04:21:41Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for Universe",
       "overview": [
-        "The Pixel Universe"
+        "The Pixel Universe: Windows onto every site, each live and each a link to its site."
       ],
       "highlights": [],
       "tags": [],
@@ -806,18 +806,18 @@
     {
       "slug": "university",
       "title": "University",
-      "tagline": "The Pixel University",
-      "description": "The Pixel University",
+      "tagline": "The Pixel University: Where pixels learn to do more.",
+      "description": "The Pixel University: Where pixels learn to do more.",
       "category": "Experiments",
       "platform": "JavaScript",
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-24T20:30:04Z",
+      "updatedAt": "2026-10-25T01:06:20Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for University",
       "overview": [
-        "The Pixel University"
+        "The Pixel University: Where pixels learn to do more."
       ],
       "highlights": [],
       "tags": [],
@@ -829,8 +829,8 @@
     {
       "slug": "weather",
       "title": "Weather",
-      "tagline": "Public project in the DV Experiments collection: Weather.",
-      "description": "Public project in the DV Experiments collection: Weather.",
+      "tagline": "The Weather Bureau: The official weather of Pixel City: a live sky, forecasts, named storms, an almanac a",
+      "description": "The Weather Bureau: The official weather of Pixel City: a live sky, forecasts, named storms, an almanac and records, all computed in the browser from the date. Part of the Pixel Universe; follows the Pixel Universe Shared Conventions.",
       "category": "Experiments",
       "platform": "JavaScript",
       "year": "2026",
@@ -840,7 +840,7 @@
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for Weather",
       "overview": [
-        "Public project in the DV Experiments collection: Weather."
+        "The Weather Bureau: The official weather of Pixel City: a live sky, forecasts, named storms, an almanac and records, all computed in the browser from the date. Part of the Pixel Universe; follows the Pixel Universe Shared Conventions."
       ],
       "highlights": [],
       "tags": [],
@@ -859,7 +859,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-24T19:58:19Z",
+      "updatedAt": "2026-10-25T00:43:05Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for WorldPulse",
       "overview": [
