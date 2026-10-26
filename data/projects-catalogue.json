@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T20:58:41.805149+00:00",
+  "generatedAt": "2026-10-26T04:59:49.760248+00:00",
   "projects": [
     {
       "slug": "little-worlds-nz",
@@ -188,7 +188,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-25T19:58:42Z",
+      "updatedAt": "2026-10-26T00:43:48Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for dialogue-lab",
       "overview": [
@@ -199,6 +199,29 @@
       "status": "live",
       "liveUrl": "https://dvexperiments.github.io/dialogue-lab/",
       "repoUrl": "https://github.com/DVExperiments/dialogue-lab",
+      "notice": "GitHub Pages is enabled."
+    },
+    {
+      "slug": "dinner-deck",
+      "title": "Dinner Deck",
+      "tagline": "Your recipe collection, a regeneratable seven-day dinner plan, and a consolidated shopping list in one in",
+      "description": "Your recipe collection, a regeneratable seven-day dinner plan, and a consolidated shopping list in one installable web app.",
+      "category": "Experiments",
+      "platform": "HTML",
+      "year": "2026",
+      "featured": false,
+      "embed": false,
+      "updatedAt": "2026-10-26T04:22:27Z",
+      "image": "assets/cover-default.svg",
+      "imageAlt": "Artwork for Dinner-Deck",
+      "overview": [
+        "Your recipe collection, a regeneratable seven-day dinner plan, and a consolidated shopping list in one installable web app."
+      ],
+      "highlights": [],
+      "tags": [],
+      "status": "live",
+      "liveUrl": "https://dvexperiments.github.io/Dinner-Deck/",
+      "repoUrl": "https://github.com/DVExperiments/Dinner-Deck",
       "notice": "GitHub Pages is enabled."
     },
     {
@@ -317,6 +340,29 @@
       "notice": "GitHub Pages is enabled."
     },
     {
+      "slug": "glyph-lab",
+      "title": "Glyph Lab",
+      "tagline": "A self-contained image-to-digital-art website. Convert your own images into classic ASCII, colour ASCII, ",
+      "description": "A self-contained image-to-digital-art website. Convert your own images into classic ASCII, colour ASCII, pixel art and halftone dots, and edit the resulting ASCII directly.",
+      "category": "Experiments",
+      "platform": "JavaScript",
+      "year": "2026",
+      "featured": false,
+      "embed": false,
+      "updatedAt": "2026-10-26T01:37:26Z",
+      "image": "assets/cover-default.svg",
+      "imageAlt": "Artwork for glyph-lab",
+      "overview": [
+        "A self-contained image-to-digital-art website. Convert your own images into classic ASCII, colour ASCII, pixel art and halftone dots, and edit the resulting ASCII directly."
+      ],
+      "highlights": [],
+      "tags": [],
+      "status": "live",
+      "liveUrl": "https://dvexperiments.github.io/glyph-lab/",
+      "repoUrl": "https://github.com/DVExperiments/glyph-lab",
+      "notice": "GitHub Pages is enabled."
+    },
+    {
       "slug": "goodscroll",
       "title": "Goodscroll",
       "tagline": "Public project in the DV Experiments collection: Goodscroll.",
@@ -326,7 +372,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-25T16:36:29Z",
+      "updatedAt": "2026-10-25T20:59:52Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for Goodscroll",
       "overview": [
@@ -433,6 +479,29 @@
       "status": "live",
       "liveUrl": "https://dvexperiments.github.io/LUMIN2/",
       "repoUrl": "https://github.com/DVExperiments/LUMIN2",
+      "notice": "GitHub Pages is enabled."
+    },
+    {
+      "slug": "market-rain",
+      "title": "Market Rain",
+      "tagline": "A Matrix-inspired stock research terminal for GitHub Pages. Stock symbols and daily price movements fall ",
+      "description": "A Matrix-inspired stock research terminal for GitHub Pages. Stock symbols and daily price movements fall through category columns. Green means the latest daily close was up on the prior session; red means it was down. A watchlist sits on the left, a blue research scanner on the right, and a keyboard-driven ticker console along the bottom.",
+      "category": "Experiments",
+      "platform": "JavaScript",
+      "year": "2026",
+      "featured": false,
+      "embed": false,
+      "updatedAt": "2026-10-26T02:41:29Z",
+      "image": "assets/cover-default.svg",
+      "imageAlt": "Artwork for Market-Rain",
+      "overview": [
+        "A Matrix-inspired stock research terminal for GitHub Pages. Stock symbols and daily price movements fall through category columns. Green means the latest daily close was up on the prior session; red means it was down. A watchlist sits on the left, a blue research scanner on the right, and a keyboard-driven ticker console along the bottom."
+      ],
+      "highlights": [],
+      "tags": [],
+      "status": "live",
+      "liveUrl": "https://dvexperiments.github.io/Market-Rain/",
+      "repoUrl": "https://github.com/DVExperiments/Market-Rain",
       "notice": "GitHub Pages is enabled."
     },
     {
@@ -581,7 +650,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-25T16:35:21Z",
+      "updatedAt": "2026-10-25T20:58:42Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for old-dashboard",
       "overview": [
@@ -722,7 +791,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-25T18:24:44Z",
+      "updatedAt": "2026-10-25T23:19:34Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for tech-brief",
       "overview": [
@@ -859,7 +928,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-25T18:06:36Z",
+      "updatedAt": "2026-10-26T01:54:29Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for WorldPulse",
       "overview": [
@@ -901,11 +970,11 @@
       "tagline": "Public project in the DV Experiments collection: Wrong-Machine.",
       "description": "Public project in the DV Experiments collection: Wrong-Machine.",
       "category": "Experiments",
-      "platform": "HTML",
+      "platform": "JavaScript",
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-25T18:54:07Z",
+      "updatedAt": "2026-10-26T00:50:24Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for Wrong-Machine",
       "overview": [
