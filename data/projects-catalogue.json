@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-28T05:56:18.024679+00:00",
+  "generatedAt": "2026-10-28T13:14:17.560577+00:00",
   "projects": [
     {
       "slug": "little-worlds-nz",
@@ -99,7 +99,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-25T07:42:53Z",
+      "updatedAt": "2026-10-28T08:08:00Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for City",
       "overview": [
@@ -188,7 +188,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-28T05:41:15Z",
+      "updatedAt": "2026-10-28T11:40:38Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for dialogue-lab",
       "overview": [
@@ -280,7 +280,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-25T06:29:00Z",
+      "updatedAt": "2026-10-28T08:07:10Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for Exchange",
       "overview": [
@@ -372,7 +372,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-27T22:26:09Z",
+      "updatedAt": "2026-10-28T05:57:11Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for Goodscroll",
       "overview": [
@@ -491,7 +491,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-28T00:32:57Z",
+      "updatedAt": "2026-10-28T09:45:09Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for Market-Rain",
       "overview": [
@@ -650,7 +650,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-27T22:25:16Z",
+      "updatedAt": "2026-10-28T05:56:19Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for old-dashboard",
       "overview": [
@@ -791,7 +791,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-28T05:44:07Z",
+      "updatedAt": "2026-10-28T11:40:12Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for tech-brief",
       "overview": [
@@ -859,7 +859,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-25T07:59:22Z",
+      "updatedAt": "2026-10-28T08:08:57Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for Universe",
       "overview": [
@@ -928,7 +928,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-28T05:56:09Z",
+      "updatedAt": "2026-10-28T11:48:48Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for WorldPulse",
       "overview": [
