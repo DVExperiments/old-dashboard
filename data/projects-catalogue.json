@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T06:02:10.246672+00:00",
+  "generatedAt": "2026-10-30T13:12:31.105949+00:00",
   "projects": [
     {
       "slug": "little-worlds-nz",
@@ -188,7 +188,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-30T00:24:43Z",
+      "updatedAt": "2026-10-30T06:28:37Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for dialogue-lab",
       "overview": [
@@ -395,7 +395,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-29T22:52:29Z",
+      "updatedAt": "2026-10-30T06:03:11Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for Goodscroll",
       "overview": [
@@ -514,7 +514,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-30T01:05:00Z",
+      "updatedAt": "2026-10-30T10:06:41Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for Market-Rain",
       "overview": [
@@ -673,7 +673,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-29T22:51:44Z",
+      "updatedAt": "2026-10-30T06:02:11Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for old-dashboard",
       "overview": [
@@ -730,6 +730,29 @@
       "status": "live",
       "liveUrl": "https://dvexperiments.github.io/PixelHigh/",
       "repoUrl": "https://github.com/DVExperiments/PixelHigh",
+      "notice": "GitHub Pages is enabled."
+    },
+    {
+      "slug": "playlab",
+      "title": "Playlab",
+      "tagline": "Public project in the DV Experiments collection: PlayLab.",
+      "description": "Public project in the DV Experiments collection: PlayLab.",
+      "category": "Experiments",
+      "platform": "HTML",
+      "year": "2026",
+      "featured": false,
+      "embed": false,
+      "updatedAt": "2026-10-30T07:33:11Z",
+      "image": "assets/cover-default.svg",
+      "imageAlt": "Artwork for PlayLab",
+      "overview": [
+        "Public project in the DV Experiments collection: PlayLab."
+      ],
+      "highlights": [],
+      "tags": [],
+      "status": "live",
+      "liveUrl": "https://dvexperiments.github.io/PlayLab/",
+      "repoUrl": "https://github.com/DVExperiments/PlayLab",
       "notice": "GitHub Pages is enabled."
     },
     {
@@ -951,7 +974,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-30T00:36:52Z",
+      "updatedAt": "2026-10-30T06:40:29Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for WorldPulse",
       "overview": [
@@ -1009,29 +1032,6 @@
       "liveUrl": "https://dvexperiments.github.io/Wrong-Machine/",
       "repoUrl": "https://github.com/DVExperiments/Wrong-Machine",
       "notice": "GitHub Pages is enabled."
-    },
-    {
-      "slug": "playlab",
-      "title": "Playlab",
-      "tagline": "Public project in the DV Experiments collection: PlayLab.",
-      "description": "Public project in the DV Experiments collection: PlayLab.",
-      "category": "Experiments",
-      "platform": "GitHub project",
-      "year": "2026",
-      "featured": false,
-      "embed": false,
-      "updatedAt": "2026-10-30T06:01:31Z",
-      "image": "assets/cover-default.svg",
-      "imageAlt": "Artwork for PlayLab",
-      "overview": [
-        "Public project in the DV Experiments collection: PlayLab."
-      ],
-      "highlights": [],
-      "tags": [],
-      "status": "repository",
-      "liveUrl": "",
-      "repoUrl": "https://github.com/DVExperiments/PlayLab",
-      "notice": "Public repository; no Pages site detected."
     },
     {
       "slug": "stillroom",
