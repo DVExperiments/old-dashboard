@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T05:57:24.719728+00:00",
+  "generatedAt": "2026-10-31T12:48:20.728954+00:00",
   "projects": [
     {
       "slug": "little-worlds-nz",
@@ -188,7 +188,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-31T02:22:16Z",
+      "updatedAt": "2026-10-31T08:53:32Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for dialogue-lab",
       "overview": [
@@ -317,6 +317,52 @@
       "notice": "GitHub Pages is enabled."
     },
     {
+      "slug": "floorplan1",
+      "title": "Floorplan1",
+      "tagline": "FloorPlan Studio 1.0 Edition",
+      "description": "FloorPlan Studio 1.0 Edition",
+      "category": "Experiments",
+      "platform": "HTML",
+      "year": "2026",
+      "featured": false,
+      "embed": false,
+      "updatedAt": "2026-10-31T08:32:34Z",
+      "image": "assets/cover-default.svg",
+      "imageAlt": "Artwork for floorplan1",
+      "overview": [
+        "FloorPlan Studio 1.0 Edition"
+      ],
+      "highlights": [],
+      "tags": [],
+      "status": "live",
+      "liveUrl": "https://dvexperiments.github.io/floorplan1/",
+      "repoUrl": "https://github.com/DVExperiments/floorplan1",
+      "notice": "GitHub Pages is enabled."
+    },
+    {
+      "slug": "floorplanstudio",
+      "title": "Floorplanstudio",
+      "tagline": "FloorPlan Studio 2.0 Edition: Browser-based floor planning, site design, heating and lighting analysis, a",
+      "description": "FloorPlan Studio 2.0 Edition: Browser-based floor planning, site design, heating and lighting analysis, and real-time 3D visualisation. ",
+      "category": "Experiments",
+      "platform": "HTML",
+      "year": "2026",
+      "featured": false,
+      "embed": false,
+      "updatedAt": "2026-10-31T08:33:41Z",
+      "image": "assets/cover-default.svg",
+      "imageAlt": "Artwork for floorplanstudio",
+      "overview": [
+        "FloorPlan Studio 2.0 Edition: Browser-based floor planning, site design, heating and lighting analysis, and real-time 3D visualisation. "
+      ],
+      "highlights": [],
+      "tags": [],
+      "status": "live",
+      "liveUrl": "https://dvexperiments.github.io/floorplanstudio/",
+      "repoUrl": "https://github.com/DVExperiments/floorplanstudio",
+      "notice": "GitHub Pages is enabled."
+    },
+    {
       "slug": "formicarium",
       "title": "Formicarium",
       "tagline": "A real-time ant colony ecosystem you observe rather than control. Every ant is an independent agent; trai",
@@ -395,7 +441,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-30T22:30:54Z",
+      "updatedAt": "2026-10-31T05:58:13Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for Goodscroll",
       "overview": [
@@ -514,7 +560,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-31T05:49:50Z",
+      "updatedAt": "2026-10-31T12:39:00Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for Market-Rain",
       "overview": [
@@ -673,7 +719,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-30T22:29:44Z",
+      "updatedAt": "2026-10-31T05:57:25Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for old-dashboard",
       "overview": [
@@ -837,7 +883,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-31T02:24:12Z",
+      "updatedAt": "2026-10-31T08:54:23Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for tech-brief",
       "overview": [
@@ -974,7 +1020,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-10-31T02:41:17Z",
+      "updatedAt": "2026-10-31T09:08:25Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for WorldPulse",
       "overview": [
