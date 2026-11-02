@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T22:11:51.888573+00:00",
+  "generatedAt": "2026-11-02T06:27:21.147249+00:00",
   "projects": [
     {
       "slug": "little-worlds-nz",
@@ -188,7 +188,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-11-01T21:11:34Z",
+      "updatedAt": "2026-11-02T00:47:59Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for dialogue-lab",
       "overview": [
@@ -464,7 +464,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-11-01T18:00:07Z",
+      "updatedAt": "2026-11-01T22:12:56Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for Goodscroll",
       "overview": [
@@ -583,7 +583,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-11-01T19:43:52Z",
+      "updatedAt": "2026-11-02T00:48:18Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for Market-Rain",
       "overview": [
@@ -742,7 +742,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-11-01T17:58:45Z",
+      "updatedAt": "2026-11-01T22:11:52Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for old-dashboard",
       "overview": [
@@ -822,6 +822,29 @@
       "status": "live",
       "liveUrl": "https://dvexperiments.github.io/PlayLab/",
       "repoUrl": "https://github.com/DVExperiments/PlayLab",
+      "notice": "GitHub Pages is enabled."
+    },
+    {
+      "slug": "profession-workshop",
+      "title": "Profession Workshop",
+      "tagline": "Public project in the DV Experiments collection: Profession-Workshop.",
+      "description": "Public project in the DV Experiments collection: Profession-Workshop.",
+      "category": "Experiments",
+      "platform": "HTML",
+      "year": "2026",
+      "featured": false,
+      "embed": false,
+      "updatedAt": "2026-11-02T06:23:11Z",
+      "image": "assets/cover-default.svg",
+      "imageAlt": "Artwork for Profession-Workshop",
+      "overview": [
+        "Public project in the DV Experiments collection: Profession-Workshop."
+      ],
+      "highlights": [],
+      "tags": [],
+      "status": "live",
+      "liveUrl": "https://dvexperiments.github.io/Profession-Workshop/",
+      "repoUrl": "https://github.com/DVExperiments/Profession-Workshop",
       "notice": "GitHub Pages is enabled."
     },
     {
@@ -906,7 +929,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-11-01T20:50:49Z",
+      "updatedAt": "2026-11-02T00:45:49Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for tech-brief",
       "overview": [
@@ -1043,7 +1066,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-11-01T21:02:13Z",
+      "updatedAt": "2026-11-02T00:56:21Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for WorldPulse",
       "overview": [
