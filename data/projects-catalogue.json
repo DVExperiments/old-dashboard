@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T19:38:06.871646+00:00",
+  "generatedAt": "2026-11-04T06:42:23.827304+00:00",
   "projects": [
     {
       "slug": "little-worlds-nz",
@@ -188,7 +188,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-11-03T15:06:30Z",
+      "updatedAt": "2026-11-04T01:20:54Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for dialogue-lab",
       "overview": [
@@ -314,6 +314,29 @@
       "status": "live",
       "liveUrl": "https://dvexperiments.github.io/Exchange/",
       "repoUrl": "https://github.com/DVExperiments/Exchange",
+      "notice": "GitHub Pages is enabled."
+    },
+    {
+      "slug": "feedback-lab",
+      "title": "Feedback Lab",
+      "tagline": "Public project in the DV Experiments collection: Feedback-Lab.",
+      "description": "Public project in the DV Experiments collection: Feedback-Lab.",
+      "category": "Experiments",
+      "platform": "HTML",
+      "year": "2026",
+      "featured": false,
+      "embed": false,
+      "updatedAt": "2026-11-03T21:59:40Z",
+      "image": "assets/cover-default.svg",
+      "imageAlt": "Artwork for Feedback-Lab",
+      "overview": [
+        "Public project in the DV Experiments collection: Feedback-Lab."
+      ],
+      "highlights": [],
+      "tags": [],
+      "status": "live",
+      "liveUrl": "https://dvexperiments.github.io/Feedback-Lab/",
+      "repoUrl": "https://github.com/DVExperiments/Feedback-Lab",
       "notice": "GitHub Pages is enabled."
     },
     {
@@ -464,7 +487,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-11-03T07:00:33Z",
+      "updatedAt": "2026-11-03T19:39:21Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for Goodscroll",
       "overview": [
@@ -583,7 +606,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-11-03T17:06:51Z",
+      "updatedAt": "2026-11-04T06:31:23Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for Market-Rain",
       "overview": [
@@ -742,7 +765,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-11-03T06:59:28Z",
+      "updatedAt": "2026-11-03T19:38:09Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for old-dashboard",
       "overview": [
@@ -857,7 +880,7 @@
       "year": "2026",
       "featured": false,
       "embed": true,
-      "updatedAt": "2026-10-12T03:09:36Z",
+      "updatedAt": "2026-11-03T21:08:40Z",
       "image": "https://raw.githubusercontent.com/DVExperiments/Ripple-Map/main/assets/cover.svg",
       "imageAlt": "Ripple Map network diagram illustrating interdependent infrastructure, people and ecological systems",
       "overview": [
@@ -929,7 +952,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-11-03T15:09:23Z",
+      "updatedAt": "2026-11-04T01:22:53Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for tech-brief",
       "overview": [
@@ -1066,7 +1089,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-11-03T15:23:15Z",
+      "updatedAt": "2026-11-04T01:35:47Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for WorldPulse",
       "overview": [
@@ -1174,6 +1197,29 @@
       "liveUrl": "",
       "repoUrl": "https://github.com/DVExperiments/Stillroom",
       "notice": "Stillroom 3.0.3 is a downloadable desktop Python application, not a browser app or GitHub Pages experience. Python 3.10+ and PySide6 are required; the Windows launcher installs PySide6 on first use. Notes are stored locally. The task button inserts a checkbox symbol rather than a functional checklist; cloud sync, encryption and attachments are not included."
+    },
+    {
+      "slug": "test",
+      "title": "Test",
+      "tagline": "Public project in the DV Experiments collection: test.",
+      "description": "Public project in the DV Experiments collection: test.",
+      "category": "Experiments",
+      "platform": "HTML",
+      "year": "2026",
+      "featured": false,
+      "embed": false,
+      "updatedAt": "2026-11-03T23:38:32Z",
+      "image": "assets/cover-default.svg",
+      "imageAlt": "Artwork for test",
+      "overview": [
+        "Public project in the DV Experiments collection: test."
+      ],
+      "highlights": [],
+      "tags": [],
+      "status": "repository",
+      "liveUrl": "",
+      "repoUrl": "https://github.com/DVExperiments/test",
+      "notice": "Public repository; no Pages site detected."
     }
   ]
 }
