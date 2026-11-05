@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T19:54:29.692331+00:00",
+  "generatedAt": "2026-11-05T07:01:31.903927+00:00",
   "projects": [
     {
       "slug": "little-worlds-nz",
@@ -188,7 +188,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-11-04T16:19:07Z",
+      "updatedAt": "2026-11-05T02:34:21Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for dialogue-lab",
       "overview": [
@@ -487,7 +487,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-11-04T06:43:18Z",
+      "updatedAt": "2026-11-04T19:54:53Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for Goodscroll",
       "overview": [
@@ -606,7 +606,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-11-04T17:17:57Z",
+      "updatedAt": "2026-11-05T06:53:52Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for Market-Rain",
       "overview": [
@@ -765,7 +765,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-11-04T06:42:24Z",
+      "updatedAt": "2026-11-04T19:54:30Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for old-dashboard",
       "overview": [
@@ -945,18 +945,18 @@
     {
       "slug": "studio-card",
       "title": "Studio Card",
-      "tagline": "A standalone, client-side Studio Card builder for the Futures PlayLab. Students can reflect on what they ",
-      "description": "A standalone, client-side Studio Card builder for the Futures PlayLab. Students can reflect on what they explored, made or tested, what surprised them, what changed, and what they would do next; see a live preview; and export a high-resolution PNG.",
+      "tagline": "A self-contained, accessible, mobile-friendly web tool that helps academyEX learners make studio learning",
+      "description": "A self-contained, accessible, mobile-friendly web tool that helps academyEX learners make studio learning visible. The goal is not simply to document an activity, but to capture how thinking changes through making, testing and reflection.",
       "category": "Experiments",
       "platform": "HTML",
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-11-04T19:14:36Z",
+      "updatedAt": "2026-11-04T20:49:02Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for Studio-Card",
       "overview": [
-        "A standalone, client-side Studio Card builder for the Futures PlayLab. Students can reflect on what they explored, made or tested, what surprised them, what changed, and what they would do next; see a live preview; and export a high-resolution PNG."
+        "A self-contained, accessible, mobile-friendly web tool that helps academyEX learners make studio learning visible. The goal is not simply to document an activity, but to capture how thinking changes through making, testing and reflection."
       ],
       "highlights": [],
       "tags": [],
@@ -975,7 +975,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-11-04T16:20:27Z",
+      "updatedAt": "2026-11-05T02:32:01Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for tech-brief",
       "overview": [
@@ -1112,7 +1112,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-11-04T16:31:39Z",
+      "updatedAt": "2026-11-05T02:45:44Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for WorldPulse",
       "overview": [
