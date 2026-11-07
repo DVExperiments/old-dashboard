@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T19:33:27.816143+00:00",
+  "generatedAt": "2026-11-07T06:13:56.064438+00:00",
   "projects": [
     {
       "slug": "little-worlds-nz",
@@ -188,7 +188,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-11-06T18:29:47Z",
+      "updatedAt": "2026-11-07T03:13:59Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for dialogue-lab",
       "overview": [
@@ -487,7 +487,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-11-06T07:02:11Z",
+      "updatedAt": "2026-11-06T19:34:13Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for Goodscroll",
       "overview": [
@@ -606,7 +606,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-11-06T16:48:18Z",
+      "updatedAt": "2026-11-07T06:04:21Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for Market-Rain",
       "overview": [
@@ -765,7 +765,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-11-06T07:00:44Z",
+      "updatedAt": "2026-11-06T19:33:29Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for old-dashboard",
       "overview": [
@@ -975,7 +975,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-11-06T18:30:09Z",
+      "updatedAt": "2026-11-07T03:13:35Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for tech-brief",
       "overview": [
@@ -1112,7 +1112,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-11-06T18:42:07Z",
+      "updatedAt": "2026-11-07T03:23:31Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for WorldPulse",
       "overview": [
@@ -1170,6 +1170,52 @@
       "liveUrl": "https://dvexperiments.github.io/Wrong-Machine/",
       "repoUrl": "https://github.com/DVExperiments/Wrong-Machine",
       "notice": "GitHub Pages is enabled."
+    },
+    {
+      "slug": "audio-visualisation-studio",
+      "title": "Audio Visualisation Studio",
+      "tagline": "Public project in the DV Experiments collection: audio-visualisation-studio.",
+      "description": "Public project in the DV Experiments collection: audio-visualisation-studio.",
+      "category": "Experiments",
+      "platform": "GitHub project",
+      "year": "2026",
+      "featured": false,
+      "embed": false,
+      "updatedAt": "2026-11-07T03:31:57Z",
+      "image": "assets/cover-default.svg",
+      "imageAlt": "Artwork for audio-visualisation-studio",
+      "overview": [
+        "Public project in the DV Experiments collection: audio-visualisation-studio."
+      ],
+      "highlights": [],
+      "tags": [],
+      "status": "repository",
+      "liveUrl": "",
+      "repoUrl": "https://github.com/DVExperiments/audio-visualisation-studio",
+      "notice": "Public repository; no Pages site detected."
+    },
+    {
+      "slug": "audio-visualiser",
+      "title": "Audio Visualiser",
+      "tagline": "Public project in the DV Experiments collection: audio-visualiser.",
+      "description": "Public project in the DV Experiments collection: audio-visualiser.",
+      "category": "Experiments",
+      "platform": "JavaScript",
+      "year": "2026",
+      "featured": false,
+      "embed": false,
+      "updatedAt": "2026-11-07T04:39:19Z",
+      "image": "assets/cover-default.svg",
+      "imageAlt": "Artwork for audio-visualiser",
+      "overview": [
+        "Public project in the DV Experiments collection: audio-visualiser."
+      ],
+      "highlights": [],
+      "tags": [],
+      "status": "repository",
+      "liveUrl": "",
+      "repoUrl": "https://github.com/DVExperiments/audio-visualiser",
+      "notice": "Public repository; no Pages site detected."
     },
     {
       "slug": "stillroom",
