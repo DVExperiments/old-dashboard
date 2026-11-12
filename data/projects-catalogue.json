@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T19:44:13.889220+00:00",
+  "generatedAt": "2026-11-12T07:25:43.993534+00:00",
   "projects": [
     {
       "slug": "little-worlds-nz",
@@ -188,7 +188,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-11-11T15:15:24Z",
+      "updatedAt": "2026-11-12T03:23:07Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for dialogue-lab",
       "overview": [
@@ -487,7 +487,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-11-11T06:49:04Z",
+      "updatedAt": "2026-11-11T19:44:34Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for Goodscroll",
       "overview": [
@@ -606,7 +606,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-11-11T17:12:50Z",
+      "updatedAt": "2026-11-12T00:47:39Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for Market-Rain",
       "overview": [
@@ -765,7 +765,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-11-11T06:47:23Z",
+      "updatedAt": "2026-11-11T19:44:19Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for old-dashboard",
       "overview": [
@@ -845,6 +845,29 @@
       "status": "live",
       "liveUrl": "https://dvexperiments.github.io/PlayLab/",
       "repoUrl": "https://github.com/DVExperiments/PlayLab",
+      "notice": "GitHub Pages is enabled."
+    },
+    {
+      "slug": "playlab-tool-finder",
+      "title": "Playlab Tool Finder",
+      "tagline": "Public project in the DV Experiments collection: PlayLab-Tool-Finder.",
+      "description": "Public project in the DV Experiments collection: PlayLab-Tool-Finder.",
+      "category": "Experiments",
+      "platform": "Python",
+      "year": "2026",
+      "featured": false,
+      "embed": false,
+      "updatedAt": "2026-11-12T00:16:49Z",
+      "image": "assets/cover-default.svg",
+      "imageAlt": "Artwork for PlayLab-Tool-Finder",
+      "overview": [
+        "Public project in the DV Experiments collection: PlayLab-Tool-Finder."
+      ],
+      "highlights": [],
+      "tags": [],
+      "status": "live",
+      "liveUrl": "https://dvexperiments.github.io/PlayLab-Tool-Finder/",
+      "repoUrl": "https://github.com/DVExperiments/PlayLab-Tool-Finder",
       "notice": "GitHub Pages is enabled."
     },
     {
@@ -975,7 +998,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-11-11T18:42:37Z",
+      "updatedAt": "2026-11-12T01:01:42Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for tech-brief",
       "overview": [
@@ -1112,7 +1135,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-11-11T14:56:08Z",
+      "updatedAt": "2026-11-12T02:43:27Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for WorldPulse",
       "overview": [
