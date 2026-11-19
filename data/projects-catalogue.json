@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T20:42:59.870999+00:00",
+  "generatedAt": "2026-11-19T07:39:06.056349+00:00",
   "projects": [
     {
       "slug": "little-worlds-nz",
@@ -188,7 +188,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-11-18T18:05:33Z",
+      "updatedAt": "2026-11-19T00:22:04Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for dialogue-lab",
       "overview": [
@@ -487,7 +487,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-11-18T07:44:15Z",
+      "updatedAt": "2026-11-18T20:44:21Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for Goodscroll",
       "overview": [
@@ -521,6 +521,29 @@
       "status": "live",
       "liveUrl": "https://dvexperiments.github.io/JobCentre/",
       "repoUrl": "https://github.com/DVExperiments/JobCentre",
+      "notice": "GitHub Pages is enabled."
+    },
+    {
+      "slug": "lucas1",
+      "title": "Lucas1",
+      "tagline": "Prototype for the SAM Lucas Game",
+      "description": "Prototype for the SAM Lucas Game",
+      "category": "Experiments",
+      "platform": "JavaScript",
+      "year": "2026",
+      "featured": false,
+      "embed": false,
+      "updatedAt": "2026-11-19T06:13:03Z",
+      "image": "assets/cover-default.svg",
+      "imageAlt": "Artwork for Lucas1",
+      "overview": [
+        "Prototype for the SAM Lucas Game"
+      ],
+      "highlights": [],
+      "tags": [],
+      "status": "live",
+      "liveUrl": "https://dvexperiments.github.io/Lucas1/",
+      "repoUrl": "https://github.com/DVExperiments/Lucas1",
       "notice": "GitHub Pages is enabled."
     },
     {
@@ -606,7 +629,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-11-18T20:37:06Z",
+      "updatedAt": "2026-11-19T02:36:37Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for Market-Rain",
       "overview": [
@@ -765,7 +788,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-11-18T07:42:59Z",
+      "updatedAt": "2026-11-18T20:43:01Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for old-dashboard",
       "overview": [
@@ -776,6 +799,29 @@
       "status": "live",
       "liveUrl": "https://dvexperiments.github.io/old-dashboard/",
       "repoUrl": "https://github.com/DVExperiments/old-dashboard",
+      "notice": "GitHub Pages is enabled."
+    },
+    {
+      "slug": "openviz-studio",
+      "title": "Openviz Studio",
+      "tagline": "Data Visualisation",
+      "description": "Data Visualisation",
+      "category": "Experiments",
+      "platform": "JavaScript",
+      "year": "2026",
+      "featured": false,
+      "embed": false,
+      "updatedAt": "2026-11-19T06:46:44Z",
+      "image": "assets/cover-default.svg",
+      "imageAlt": "Artwork for OpenViz-Studio",
+      "overview": [
+        "Data Visualisation"
+      ],
+      "highlights": [],
+      "tags": [],
+      "status": "live",
+      "liveUrl": "https://dvexperiments.github.io/OpenViz-Studio/",
+      "repoUrl": "https://github.com/DVExperiments/OpenViz-Studio",
       "notice": "GitHub Pages is enabled."
     },
     {
@@ -857,7 +903,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-11-17T22:21:59Z",
+      "updatedAt": "2026-11-18T20:52:32Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for PlayLab-Tool-Finder",
       "overview": [
@@ -998,7 +1044,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-11-18T19:38:15Z",
+      "updatedAt": "2026-11-19T01:30:21Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for tech-brief",
       "overview": [
@@ -1135,7 +1181,7 @@
       "year": "2026",
       "featured": false,
       "embed": false,
-      "updatedAt": "2026-11-18T18:19:33Z",
+      "updatedAt": "2026-11-19T00:34:28Z",
       "image": "assets/cover-default.svg",
       "imageAlt": "Artwork for WorldPulse",
       "overview": [
